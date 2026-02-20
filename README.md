@@ -1,53 +1,56 @@
 # Daniel Yarmoluk
 
-Building intelligent knowledge systems across diverse domains using structured knowledge graphs and AI.
+**41 domain knowledge systems deployed across 27 verticals in 38 days.** One person. One methodology. Knowledge graphs in, MCP-ready systems out.
 
-## What I'm Working On
+## The Thesis
 
-I'm exploring whether a single methodology — structuring domain expertise as knowledge graphs and deploying AI to reason over them — works across radically different fields. So far, it does.
+A single architecture — decompose any domain into structured concept graphs, map dependencies, deploy — works regardless of field. Oral surgery, cybersecurity, equipment finance, peptide science, IP law, industrial IoT. The methodology is domain-agnostic. The evidence is below.
 
-### Intelligent Textbooks
+## Domain Knowledge Systems
 
-Each project starts with a ~200-concept knowledge graph, generates structured chapters respecting prerequisite dependencies, and deploys as an interactive MkDocs Material site with learning graph visualizations.
+| System | Domain | Concepts | Live Site |
+|--------|--------|----------|-----------|
+| [TankScan](https://github.com/Yarmoluk/tankscan-course) | Industrial IoT & Wireless Monitoring | 90+ | [View](https://yarmoluk.github.io/tankscan-course/) |
+| [Digital Transformation](https://github.com/Yarmoluk/Digital-Transformation-with-AI-Spring-2026) | Enterprise AI Strategy | 200 | [View](https://yarmoluk.github.io/Digital-Transformation-with-AI-Spring-2026/) |
+| [Black Hills IP](https://github.com/Yarmoluk/blackhillsip) | IP Management & Legal Technology | 200 | [View](https://yarmoluk.github.io/blackhillsip/) |
+| [Modern OMS](https://github.com/Yarmoluk/maxfac-course) | Oral & Maxillofacial Surgery | 270 | [View](https://yarmoluk.github.io/maxfac-course/) |
+| [Ink Sanctum](https://github.com/Yarmoluk/ink-sanctum-textbook) | Tattoo Aftercare & Preparation | 200 | [View](https://yarmoluk.github.io/ink-sanctum-textbook/) |
+| [Proto Hologram](https://github.com/Yarmoluk/proto-hologram-textbook) | Holographic Sales Enablement | 200 | [View](https://yarmoluk.github.io/proto-hologram-textbook/) |
+| [Peptide Science](https://github.com/Yarmoluk/peptide-education-textbook) | Peptide Protocols for Athletes | 200 | [View](https://yarmoluk.github.io/peptide-education-textbook/) |
+| [Future of Work](https://github.com/Yarmoluk/future-of-work-ai) | Human-AI Collaboration | 200 | [View](https://yarmoluk.github.io/future-of-work-ai/) |
+| [Hackathon Strategy](https://github.com/Yarmoluk/hackathon-strategy-guide) | Competitive AI Hackathons | 200 | [View](https://yarmoluk.github.io/hackathon-strategy-guide/) |
+| [Concrete Pump Sales](https://github.com/Yarmoluk/concrete-pump-sales-guide) | Equipment Finance | 200 | [View](https://yarmoluk.github.io/concrete-pump-sales-guide/) |
+| [HaaS Finance](https://github.com/Yarmoluk/haas-equipment-finance-guide) | Hardware-as-a-Service Models | 200 | [View](https://yarmoluk.github.io/haas-equipment-finance-guide/) |
+| [SMB Operations](https://github.com/Yarmoluk/smb-operations-ai-guide) | AI for Small Business Ops | 200 | [View](https://yarmoluk.github.io/smb-operations-ai-guide/) |
 
-| Project | Domain | Concepts | Chapters | Live Site |
-|---------|--------|----------|----------|-----------|
-| [TankScan Course](https://github.com/Yarmoluk/tankscan-course) | Industrial IoT & Wireless Tank Monitoring | 90+ | 15 | [View](https://yarmoluk.github.io/tankscan-course/) |
-| [Digital Transformation with AI](https://github.com/Yarmoluk/Digital-Transformation-with-AI-Spring-2026) | SEIS 666 Course Text | 200 | 11 | [View](https://yarmoluk.github.io/Digital-Transformation-with-AI-Spring-2026/) |
-| [Black Hills IP](https://github.com/Yarmoluk/blackhillsip) | IP Management & Legal Technology | 200 | 13 | [View](https://yarmoluk.github.io/blackhillsip/) |
-| [Modern OMS](https://github.com/Yarmoluk/maxfac-course) | Oral & Maxillofacial Surgery | 270 | 20 | [View](https://yarmoluk.github.io/maxfac-course/) |
-| [Ink Sanctum](https://github.com/Yarmoluk/ink-sanctum-textbook) | Tattoo Aftercare & Preparation | 200 | 12 | [View](https://yarmoluk.github.io/ink-sanctum-textbook/) |
-| [Proto Hologram](https://github.com/Yarmoluk/proto-hologram-textbook) | Holographic Sales Enablement | 24 | 16 | [View](https://yarmoluk.github.io/proto-hologram-textbook/) |
+## AI Decision Support Systems
 
-### AI-Powered Tools
+Structured reasoning over domain-specific knowledge graphs. Each system maps expert decision paths into queryable, auditable architectures.
+
+| System | Domain |
+|--------|--------|
+| [OMS Clinical Assistant](https://github.com/Yarmoluk/oms-clinical-assistant) | Oral & Maxillofacial Surgery — clinical decision support |
+| [OMS Office Operations](https://github.com/Yarmoluk/oms-office-operations) | OMS practice management |
+| [Peptide Protocol Advisor](https://github.com/Yarmoluk/peptide-protocol-advisor) | Peptide science for strength athletes |
+| [Cybersecurity IR](https://github.com/Yarmoluk/cybersecurity-incident-response) | NIST SP 800-61 incident response |
+| [M&A Due Diligence](https://github.com/Yarmoluk/ma-due-diligence-advisor) | Mergers & acquisitions analysis |
+| [Supply Chain Risk](https://github.com/Yarmoluk/supply-chain-risk-analyst) | ISO 28000 supply chain risk management |
+| [Real Estate Analysis](https://github.com/Yarmoluk/real-estate-investment-analyzer) | Cap rate, cash flow, BRRRR investment analysis |
+| [HR Compliance](https://github.com/Yarmoluk/hr-compliance-advisor) | FLSA, ADA, FMLA, Title VII compliance |
+
+## Applied AI Tools
 
 | Project | What It Does |
 |---------|-------------|
-| [MacroCoach AI](https://github.com/Yarmoluk/macro-coach) | Shareable AI nutrition coach with adaptive macro tracking and meal planning |
-| [IP Paralegal Bot](https://github.com/Yarmoluk/ip-paralegal-knowledge-bot) | Decision support bot reasoning over the Black Hills IP knowledge graph |
+| [MacroCoach AI](https://github.com/Yarmoluk/macro-coach) | Adaptive nutrition coaching with macro tracking and meal planning |
+| [IP Paralegal Bot](https://github.com/Yarmoluk/ip-paralegal-knowledge-bot) | Decision support reasoning over a 200-concept IP knowledge graph |
+| [Construction AI Research](https://github.com/Yarmoluk/mortenson-ai-research) | Agentic workflows and applied AI for the built environment |
+| [AI Capability Portfolio](https://github.com/Yarmoluk/ai-capability-portfolio) | Composable skills and capability-first interaction design |
 
-### The Pattern
-
-Every domain follows the same pipeline:
-
-```
-Course Description → Learning Graph (~200 concepts) → Chapter Structure →
-Content Generation → Interactive MicroSims → Glossary → FAQ → Quizzes →
-AI Chatbot → Deploy
-```
-
-The knowledge graph is the brain. Everything else — chapters, chatbots, quizzes, glossaries — is a different view of the same structured expertise.
-
-## Currently
-
-- Teaching **SEIS 666: Digital Transformation with AI** at University of St. Thomas (Spring 2026)
-- Learning from [Dan McCreary's](https://github.com/dmccreary) intelligent textbook methodology
-- Building with **Claude Code** and the [claude-skills](https://github.com/dmccreary/claude-skills) framework
-
-## Tools I Use
+## Tools
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
-![MkDocs](https://img.shields.io/badge/-MkDocs_Material-526CFE?style=flat&logo=materialformkdocs&logoColor=white)
 ![Claude](https://img.shields.io/badge/-Claude_Code-000000?style=flat&logo=anthropic&logoColor=white)
-![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+![MCP](https://img.shields.io/badge/-MCP-000000?style=flat&logo=anthropic&logoColor=white)
+![MkDocs](https://img.shields.io/badge/-MkDocs_Material-526CFE?style=flat&logo=materialformkdocs&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)

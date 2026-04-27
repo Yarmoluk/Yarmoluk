@@ -53,4 +53,4 @@ Yarmoluk & McCreary, 2026 · v0.6.2 · Patent pending App #64/040,804
 
 ## Contact
 
-[graphifymd.com](https://graphifymd.com) · [LinkedIn](https://linkedin.com/in/danielyarmoluk)
+[graphifymd.com](https://graphifymd.com) · [LinkedIn](https://www.linkedin.com/in/danyarmoluk/)

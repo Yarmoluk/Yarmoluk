@@ -108,8 +108,11 @@ def main():
     saved_bar  = bar(tokens_saved,     max_val=1_000_000)
     scale_bar  = bar(int(savings_usd), max_val=5_000)
 
-    block = f"""```
-CONTEXT KING ▸ ckg-benchmark v0.6.2        graphifymd.com
+    G = "\x1b[92m"   # bright green
+    R = "\x1b[0m"    # reset
+
+    block = f"""```ansi
+{G}CONTEXT KING ▸ ckg-benchmark v0.6.2        graphifymd.com
 ══════════════════════════════════════════════════════════════════════════
  BENCHMARK F1     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░]  0.471   +283% vs RAG
  TOKEN EFFICIENCY [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░]  91%     tokens saved vs RAG
@@ -118,7 +121,7 @@ CONTEXT KING ▸ ckg-benchmark v0.6.2        graphifymd.com
  TOKENS SAVED     {saved_bar}  {fmt_k(tokens_saved)}    this month vs RAG
  SAVINGS AT SCALE {scale_bar}  {fmt_usd(savings_usd)}   est · enterprise
 ══════════════════════════════════════════════════════════════════════════
- Own the context, rent the model.
+ Own the context, rent the model.{R}
 ```"""
 
     readme_path = "README.md"

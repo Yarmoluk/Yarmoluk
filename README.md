@@ -1,6 +1,19 @@
-<div align="center">
+<!-- TELEMETRY_START -->
+```ansi
+[92mCONTEXT KING ▸ ckg-benchmark v0.6.2        graphifymd.com
+══════════════════════════════════════════════════════════════════════════
+ BENCHMARK F1     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░]  0.471   +283% vs RAG
+ TOKEN EFFICIENCY [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░]  91%     tokens saved vs RAG
+ CKG DOMAINS      [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░]  97      SHA-256 · MCP-native
+ PYPI / MONTH     [▓▓▓░░░░░░░░░░░░░░░]  1,381   downloads / month
+ TOKENS SAVED     [▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░]  727k    this month vs RAG
+ SAVINGS AT SCALE [▓░░░░░░░░░░░░░░░░░]  $478    est · enterprise
+══════════════════════════════════════════════════════════════════════════
+ Own the context, rent the model.[0m
+```
+<!-- TELEMETRY_END -->
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=500&size=20&duration=3200&pause=1400&color=0F6E56&center=true&vCenter=true&width=660&lines=Agents+need+certainty.+LLMs+give+probability.;RAG+retrieves+context.+It+doesn%27t+know.;CKG%3A+269+tokens+%C2%B7+SHA-256+%C2%B7+always+true.;Model+for+language.+Context+for+knowledge.)](https://graphifymd.com)
+<div align="center">
 
 [![PyPI downloads](https://img.shields.io/badge/PyPI-5%2C349%2Fmo-22c55e?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-5_live-0f6e56?style=flat-square)](https://registry.modelcontextprotocol.io)
@@ -13,25 +26,13 @@
 [![LlamaIndex](https://img.shields.io/badge/LlamaIndex-compatible-6366f1?style=flat-square)](https://github.com/Yarmoluk/llamaindex-ckg)
 [![CrewAI](https://img.shields.io/badge/CrewAI-compatible-ef4444?style=flat-square)](https://github.com/Yarmoluk/crewai-ckg)
 [![Zep](https://img.shields.io/badge/Zep-compatible-0ea5e9?style=flat-square)](https://github.com/Yarmoluk/zep-ckg)
+[![ElevenLabs](https://img.shields.io/badge/ElevenLabs-compatible-111827?style=flat-square)](https://elevenlabs.io)
+[![NVIDIA](https://img.shields.io/badge/NVIDIA-compatible-76b900?style=flat-square&logo=nvidia&logoColor=white)](https://github.com/Yarmoluk/ckg-nvidia-ai)
+[![Meta Llama](https://img.shields.io/badge/Meta_Llama-compatible-0668E1?style=flat-square)](https://github.com/Yarmoluk/ckg-mcp)
+[![Smithery](https://img.shields.io/badge/Smithery-listed-ff6b35?style=flat-square)](https://smithery.ai/server/@Yarmoluk/ckg-mcp)
+[![Anthropic](https://img.shields.io/badge/Anthropic_MCP-registry-0f6e56?style=flat-square&logo=anthropic&logoColor=white)](https://registry.modelcontextprotocol.io)
 
 </div>
-
----
-
-<!-- TELEMETRY_START -->
-```
-CONTEXT KING ▸ ckg-benchmark v0.6.2        graphifymd.com
-══════════════════════════════════════════════════════════════════════════
- BENCHMARK F1     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░]  0.471   +283% vs RAG
- TOKEN EFFICIENCY [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░]  91%     tokens saved vs RAG
- CKG DOMAINS      [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░]  97      SHA-256 · MCP-native
- PYPI / MONTH     [▓▓▓░░░░░░░░░░░░░░░]  1,381   downloads / month
- TOKENS SAVED     [▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░]  727k    this month vs RAG
- SAVINGS AT SCALE [▓░░░░░░░░░░░░░░░░░]  $478   est · enterprise
-══════════════════════════════════════════════════════════════════════════
- Own the context, rent the model.
-```
-<!-- TELEMETRY_END -->
 
 ---
 

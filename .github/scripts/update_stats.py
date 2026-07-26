@@ -135,6 +135,14 @@ def main():
         flags=re.DOTALL,
     )
 
+    # Keep the PyPI badge number in sync
+    pypi_badge_val = f"{total_monthly:,}%2Fmo".replace(",", "%2C")
+    updated = re.sub(
+        r"badge/PyPI-[\d%2C]+%2Fmo-",
+        f"badge/PyPI-{pypi_badge_val}-",
+        updated,
+    )
+
     with open(readme_path, "w") as f:
         f.write(updated)
 

@@ -65,13 +65,11 @@ F1 scales with hop depth: `0.374 → 0.772` at hop=5. RAG plateaus at hop=2.
 
 ---
 
-## Active Threads
+## In the Ecosystem
 
 ```
-[ LIVE   ] Polar paywall · $10/year · license keys · rate-gated on 3 Render services
-[ JUL 28 ] MCP v2 migration — stateless core · 5 packages · same install, new transport
-[ NEXT   ] ElevenLabs CKG — voice AI platform · ~50 nodes
-[ OPEN   ] AutoGen #7353 — cryptographic action receipts · PARTIAL conformance
+[ OPEN ] microsoft/autogen#7353 — cryptographic action receipts for enterprise agent governance
+         ckg-knowledge-receipt: PARTIAL · canonical_envelope ✓ · anchoring pending external TSA
 ```
 
 ---

@@ -32,9 +32,9 @@ CONTEXT KING ▸ ckg-benchmark v0.6.2        graphifymd.com
  BENCHMARK F1     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░]  0.471   +283% vs RAG
  TOKEN EFFICIENCY [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░]  91%     tokens saved vs RAG
  CKG DOMAINS      [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░]  97      SHA-256 · MCP-native
- PYPI / MONTH     [░░░░░░░░░░░░░░░░░░]  259     downloads / month
- TOKENS SAVED     [▓░░░░░░░░░░░░░░░░░]  725k    this month vs RAG
- SAVINGS AT SCALE [░░░░░░░░░░░░░░░░░░]  $0.3k   est · enterprise
+ PYPI / MONTH     [▓▓▓░░░░░░░░░░░░░░░]  1,381   downloads / month
+ TOKENS SAVED     [▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░]  727k    this month vs RAG
+ SAVINGS AT SCALE [▓░░░░░░░░░░░░░░░░░]  $478   est · enterprise
 ══════════════════════════════════════════════════════════════════════════
  Own the context, rent the model.
 ```

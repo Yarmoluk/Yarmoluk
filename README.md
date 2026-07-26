@@ -14,16 +14,16 @@
 
 <!-- TELEMETRY_START -->
 ```
-CONTEXT KING                              graphifymd.com · ckg-benchmark v0.6.2
-─────────────────────────────────────────────────────────────────────────────────
- BENCHMARK F1    ████████████████░░░░░░░░  0.471  +283% vs RAG  +292% vs GraphRAG
- TOKENS/QUERY    ██████░░░░░░░░░░░░░░░░░░  269    vs 2,982 RAG        11× savings
- CKG DOMAINS     ████████████████████████  97     deployed · MCP-native · SHA-256
- PYPI / MONTH    ████████████░░░░░░░░░░░░  5,349  installs · 5 packages
- MCP REQUESTS    █████████████░░░░░░░░░░░  267    30-day · 21 unique users
- RATE LIMIT HITS ██████░░░░░░░░░░░░░░░░░░  5      active buyers hitting ceiling
-─────────────────────────────────────────────────────────────────────────────────
- Own the context, rent the model.           Model for language, context for knowledge.
+CONTEXT KING                              graphifymd.com
+──────────────────────────────────────────────────────────────────────────
+ BENCHMARK F1    ████████████████░░░░░░░░   0.471   +283% vs RAG
+ TOKEN EFFICIENCY ██████████████████████░░   91%     tokens saved vs RAG
+ CKG DOMAINS     ████████████████████████   97      MCP-native · SHA-256
+ PYPI / MONTH    ████████████░░░░░░░░░░░░   5,349   installs / mo
+ MCP REQUESTS    █████████████░░░░░░░░░░░   267     30-day · 21 users
+ TOKENS SAVED    █████████████████░░░░░░░   724k    this month vs RAG
+──────────────────────────────────────────────────────────────────────────
+ Own the context, rent the model.
 ```
 <!-- TELEMETRY_END -->
 

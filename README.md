@@ -20,8 +20,8 @@ CONTEXT KING                              graphifymd.com · ckg-benchmark v0.6.2
  TOKENS/QUERY    ██████░░░░░░░░░░░░░░░░░░  269    vs 2,982 RAG        11× savings
  CKG DOMAINS     ████████████████████████  97     deployed · MCP-native · SHA-256
  PYPI / MONTH    ████████████░░░░░░░░░░░░  5,349  installs · 5 packages
- MCP INSTALLS    ████░░░░░░░░░░░░░░░░░░░░  19     7-day · startup pings
- MCP REQUESTS    ████████░░░░░░░░░░░░░░░░  79     7-day · live via PostHog
+ MCP REQUESTS    █████████████░░░░░░░░░░░  267    30-day · 21 unique users
+ RATE LIMIT HITS ██████░░░░░░░░░░░░░░░░░░  5      active buyers hitting ceiling
 ─────────────────────────────────────────────────────────────────────────────────
  Own the context, rent the model.           Model for language, context for knowledge.
 ```

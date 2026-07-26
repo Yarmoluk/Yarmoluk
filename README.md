@@ -5,7 +5,6 @@
  BENCHMARK F1     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░]  0.471   +283% vs RAG
  TOKEN EFFICIENCY [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░]  91%     tokens saved vs RAG
  CKG DOMAINS      [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░]  97      SHA-256 · MCP-native
- PYPI / MONTH     [▓▓▓░░░░░░░░░░░░░░░]  1,381   downloads / month
  TOKENS SAVED     [▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░]  727k    this month vs RAG
  SAVINGS AT SCALE [▓░░░░░░░░░░░░░░░░░]  $478    est · enterprise
 ══════════════════════════════════════════════════════════════════════════

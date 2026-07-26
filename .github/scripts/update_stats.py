@@ -60,7 +60,7 @@ def pypi_monthly(package: str) -> int:
             headers=HEADERS_PYPI,
             timeout=10,
         )
-        return r.json()["data"]["last_month"]
+        return r.json()["data"]["last_week"] * 2
     except Exception as e:
         print(f"PyPI error ({package}): {e}")
         return 0
@@ -104,7 +104,6 @@ def main():
     print(f"Tokens saved 30d: {tokens_saved:,}")
     print(f"Potential savings: {fmt_usd(savings_usd)}/mo at enterprise rate")
 
-    pypi_bar   = bar(total_monthly,    max_val=8_000)
     saved_bar  = bar(tokens_saved,     max_val=1_000_000)
     scale_bar  = bar(int(savings_usd), max_val=5_000)
 
@@ -117,7 +116,6 @@ def main():
  BENCHMARK F1     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░]  0.471   +283% vs RAG
  TOKEN EFFICIENCY [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░]  91%     tokens saved vs RAG
  CKG DOMAINS      [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░]  97      SHA-256 · MCP-native
- PYPI / MONTH     {pypi_bar}  {total_monthly:,}   downloads / month
  TOKENS SAVED     {saved_bar}  {fmt_k(tokens_saved)}    this month vs RAG
  SAVINGS AT SCALE {scale_bar}  {fmt_usd(savings_usd)}   est · enterprise
 ══════════════════════════════════════════════════════════════════════════

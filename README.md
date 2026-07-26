@@ -1,8 +1,6 @@
 <div align="center">
 
-# Daniel Yarmoluk
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=500&size=20&duration=3000&pause=1200&color=0F6E56&center=true&vCenter=true&width=660&lines=I+build+the+knowledge+layer+AI+agents+are+missing.;Knowledge+Graph+Architect+%C2%B7+Minneapolis%2C+MN;Founder%2C+Graphify.md;Own+the+context%2C+rent+the+model.)](https://graphifymd.com)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=500&size=20&duration=3200&pause=1400&color=0F6E56&center=true&vCenter=true&width=660&lines=Agents+need+certainty.+LLMs+give+probability.;RAG+retrieves+context.+It+doesn%27t+know.;CKG%3A+269+tokens+%C2%B7+SHA-256+%C2%B7+always+true.;Model+for+language.+Context+for+knowledge.)](https://graphifymd.com)
 
 [![PyPI downloads](https://img.shields.io/badge/PyPI-5%2C349%2Fmo-22c55e?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-5_live-0f6e56?style=flat-square)](https://registry.modelcontextprotocol.io)

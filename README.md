@@ -7,6 +7,19 @@
 [![CKG domains](https://img.shields.io/badge/CKG_domains-97-1d4ed8?style=flat-square)](https://graphifymd.com)
 [![Benchmark F1](https://img.shields.io/badge/F1-0.471_+283%25_RAG-8b5cf6?style=flat-square)](https://graphifymd.com/paper.html)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-danyarm-f59e0b?style=flat-square&logo=huggingface&logoColor=white)](https://huggingface.co/danyarm)
+[![GitHub followers](https://img.shields.io/github/followers/Yarmoluk?style=flat-square&logo=github&logoColor=white&color=181717)](https://github.com/Yarmoluk)
+
+[![Token efficiency](https://img.shields.io/badge/tokens%2Fquery-269_vs_2%2C982_RAG-0f6e56?style=flat-square)](https://graphifymd.com/paper.html)
+[![Provenance](https://img.shields.io/badge/provenance-SHA--256_per_node-2563eb?style=flat-square)](https://graphifymd.com)
+[![Patent](https://img.shields.io/badge/patent-pending-7c3aed?style=flat-square)](https://graphifymd.com)
+[![License](https://img.shields.io/badge/license-MIT-22c55e?style=flat-square)](https://github.com/Yarmoluk/ckg-mcp/blob/main/LICENSE)
+[![Benchmark](https://img.shields.io/badge/benchmark-v0.6.2-f59e0b?style=flat-square)](https://huggingface.co/datasets/danyarm/ckg-benchmark)
+
+[![LangChain](https://img.shields.io/badge/LangChain-compatible-1c7c2c?style=flat-square&logo=chainlink&logoColor=white)](https://github.com/Yarmoluk/langchain-ckg)
+[![LlamaIndex](https://img.shields.io/badge/LlamaIndex-compatible-6366f1?style=flat-square)](https://github.com/Yarmoluk/llamaindex-ckg)
+[![CrewAI](https://img.shields.io/badge/CrewAI-compatible-ef4444?style=flat-square)](https://github.com/Yarmoluk/crewai-ckg)
+[![Render](https://img.shields.io/badge/deployed-Render-46e3b7?style=flat-square&logo=render&logoColor=white)](https://graphifymd.com)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776ab?style=flat-square&logo=python&logoColor=white)](https://pypi.org/user/danyarm/)
 
 </div>
 
@@ -14,15 +27,15 @@
 
 <!-- TELEMETRY_START -->
 ```
-CONTEXT KING                              graphifymd.com
-──────────────────────────────────────────────────────────────────────────
- BENCHMARK F1    ████████████████░░░░░░░░   0.471   +283% vs RAG
- TOKEN EFFICIENCY ██████████████████████░░   91%     tokens saved vs RAG
- CKG DOMAINS     ████████████████████████   97      MCP-native · SHA-256
- PYPI / MONTH    ░░░░░░░░░░░░░░░░░░░░░░░░   259   installs / mo
- MCP REQUESTS    ████████████░░░░░░░░░░░░   267     30-day · 21 users
- TOKENS SAVED    █████████████████░░░░░░░   724k    this month vs RAG
-──────────────────────────────────────────────────────────────────────────
+CONTEXT KING ▸ ckg-benchmark v0.6.2        graphifymd.com
+══════════════════════════════════════════════════════════════════════════
+ BENCHMARK F1     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░]  0.471   +283% vs RAG
+ TOKEN EFFICIENCY [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░]  91%     tokens saved vs RAG
+ CKG DOMAINS      [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░]  97      SHA-256 · MCP-native
+ PYPI / MONTH     [░░░░░░░░░░░░░░░░░░]  259     downloads / month
+ TOKENS SAVED     [▓░░░░░░░░░░░░░░░░░]  725k    this month vs RAG
+ SAVINGS AT SCALE [░░░░░░░░░░░░░░░░░░]  $0.3k   est · enterprise
+══════════════════════════════════════════════════════════════════════════
  Own the context, rent the model.
 ```
 <!-- TELEMETRY_END -->

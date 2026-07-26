@@ -66,40 +66,58 @@ def pypi_monthly(package: str) -> int:
         return 0
 
 
-def bar(value: int, max_val: int = 10000, width: int = 24) -> str:
+def bar(value: int, max_val: int = 10000, width: int = 18) -> str:
+    """Return a bracketed [▓▓▓░░░] bar of fixed width."""
     if max_val == 0:
-        return "░" * width
+        return "[" + "░" * width + "]"
     filled = min(int((value / max_val) * width), width)
-    return "█" * filled + "░" * (width - filled)
+    return "[" + "▓" * filled + "░" * (width - filled) + "]"
 
 
 def fmt_k(n: int) -> str:
-    return f"{n // 1000}k" if n >= 1000 else str(n)
+    if n >= 1_000_000:
+        return f"{n / 1_000_000:.1f}M"
+    if n >= 1000:
+        return f"{n // 1000}k"
+    return str(n)
+
+
+def fmt_usd(n: float) -> str:
+    if n >= 1000:
+        return f"${n / 1000:.1f}k"
+    return f"${n:.0f}"
 
 
 def main():
     requests_30d, unique_users = posthog_event_count("mcp_request", days=30)
     total_monthly = sum(pypi_monthly(p) for p in PACKAGES)
-    tokens_saved = requests_30d * 2713
+
+    # Tokens saved: actual queries × per-query delta vs RAG (2,982 - 269 = 2,713)
+    tokens_saved = requests_30d * 2_713
+
+    # Savings at scale: monthly PyPI installs × avg queries/user × $10/1M enterprise rate
+    avg_queries = max(requests_30d / max(unique_users, 1), 1.0)
+    savings_usd = total_monthly * avg_queries * 2_713 / 1_000_000 * 10
 
     print(f"PyPI/month: {total_monthly:,}")
     print(f"MCP requests 30d: {requests_30d} ({unique_users} unique users)")
     print(f"Tokens saved 30d: {tokens_saved:,}")
+    print(f"Potential savings: {fmt_usd(savings_usd)}/mo at enterprise rate")
 
-    pypi_bar  = bar(total_monthly, max_val=8000)
-    req_bar   = bar(requests_30d,  max_val=500)
-    saved_bar = bar(tokens_saved,  max_val=1_000_000)
+    pypi_bar   = bar(total_monthly,    max_val=8_000)
+    saved_bar  = bar(tokens_saved,     max_val=1_000_000)
+    scale_bar  = bar(int(savings_usd), max_val=5_000)
 
     block = f"""```
-CONTEXT KING                              graphifymd.com
-──────────────────────────────────────────────────────────────────────────
- BENCHMARK F1    ████████████████░░░░░░░░   0.471   +283% vs RAG
- TOKEN EFFICIENCY ██████████████████████░░   91%     tokens saved vs RAG
- CKG DOMAINS     ████████████████████████   97      MCP-native · SHA-256
- PYPI / MONTH    {pypi_bar}   {total_monthly:,}   installs / mo
- MCP REQUESTS    {req_bar}   {requests_30d}     30-day · {unique_users} users
- TOKENS SAVED    {saved_bar}   {fmt_k(tokens_saved)}    this month vs RAG
-──────────────────────────────────────────────────────────────────────────
+CONTEXT KING ▸ ckg-benchmark v0.6.2        graphifymd.com
+══════════════════════════════════════════════════════════════════════════
+ BENCHMARK F1     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░]  0.471   +283% vs RAG
+ TOKEN EFFICIENCY [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░]  91%     tokens saved vs RAG
+ CKG DOMAINS      [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░]  97      SHA-256 · MCP-native
+ PYPI / MONTH     {pypi_bar}  {total_monthly:,}   downloads / month
+ TOKENS SAVED     {saved_bar}  {fmt_k(tokens_saved)}    this month vs RAG
+ SAVINGS AT SCALE {scale_bar}  {fmt_usd(savings_usd)}   est · enterprise
+══════════════════════════════════════════════════════════════════════════
  Own the context, rent the model.
 ```"""
 

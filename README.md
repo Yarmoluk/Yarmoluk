@@ -14,16 +14,16 @@
 
 <!-- TELEMETRY_START -->
 ```
-CONTEXT KING                              graphifymd.com · ckg-benchmark v0.6.2
-─────────────────────────────────────────────────────────────────────────────────
- BENCHMARK F1    ████████████████░░░░░░░░  0.471  +283% vs RAG  +292% vs GraphRAG
- TOKENS/QUERY    ██████░░░░░░░░░░░░░░░░░░  269    vs 2,982 RAG        11× savings
- CKG DOMAINS     ████████████████████████  97     deployed · MCP-native · SHA-256
- PYPI / MONTH    ░░░░░░░░░░░░░░░░░░░░░░░░  0  installs · 5 packages
- MCP REQUESTS    ░░░░░░░░░░░░░░░░░░░░░░░░  0    30-day · 0 unique users
- RATE LIMIT HITS ░░░░░░░░░░░░░░░░░░░░░░░░  0     active buyers hitting ceiling
-─────────────────────────────────────────────────────────────────────────────────
- Own the context, rent the model.           Model for language, context for knowledge.
+CONTEXT KING                              graphifymd.com
+──────────────────────────────────────────────────────────────────────────
+ BENCHMARK F1    ████████████████░░░░░░░░   0.471   +283% vs RAG
+ TOKEN EFFICIENCY ██████████████████████░░   91%     tokens saved vs RAG
+ CKG DOMAINS     ████████████████████████   97      MCP-native · SHA-256
+ PYPI / MONTH    ████████████░░░░░░░░░░░░   5,349   installs / mo
+ MCP REQUESTS    █████████████░░░░░░░░░░░   267     30-day · 21 users
+ TOKENS SAVED    █████████████████░░░░░░░   724k    this month vs RAG
+──────────────────────────────────────────────────────────────────────────
+ Own the context, rent the model.
 ```
 <!-- TELEMETRY_END -->
 
@@ -33,11 +33,11 @@ CONTEXT KING                              graphifymd.com · ckg-benchmark v0.6.2
 
 | Package | What it serves | Downloads |
 |---------|----------------|-----------|
-| [**ckg-mcp**](https://github.com/Yarmoluk/ckg-mcp) | 97-domain MCP server · drop-in knowledge layer for any agent stack · SHA-256 provenance per node | [![dm](https://img.shields.io/pypi/dm/ckg-mcp?style=flat-square&color=22c55e&label=)](https://pypi.org/project/ckg-mcp/) |
-| [**ckg-nvidia-ai**](https://github.com/Yarmoluk/ckg-nvidia-ai) | NVIDIA AI stack · 20 domains · 1,055 nodes · per-URL SHA-256 | [![dm](https://img.shields.io/pypi/dm/ckg-nvidia-ai?style=flat-square&color=22c55e&label=)](https://pypi.org/project/ckg-nvidia-ai/) |
-| [**ckg-nvidia-nemoclaw**](https://github.com/Yarmoluk/ckg-nvidia-nemoclaw) | NemoClaw · **F1 0.576** benchmarked · 55 nodes / 74 edges | [![dm](https://img.shields.io/pypi/dm/ckg-nvidia-nemoclaw?style=flat-square&color=22c55e&label=)](https://pypi.org/project/ckg-nvidia-nemoclaw/) |
-| [**ckg-agentforce**](https://github.com/Yarmoluk/ckg-agentforce) | Salesforce AgentForce · billing + permissions chains · rate-gated | [![dm](https://img.shields.io/pypi/dm/ckg-agentforce?style=flat-square&color=22c55e&label=)](https://pypi.org/project/ckg-agentforce/) |
-| [**ckg-nemotron-perplexity**](https://github.com/Yarmoluk/ckg-nemotron-perplexity) | NVIDIA Nemotron + Perplexity Sonar · 2 domains · 83 nodes | [![dm](https://img.shields.io/pypi/dm/ckg-nemotron-perplexity?style=flat-square&color=22c55e&label=)](https://pypi.org/project/ckg-nemotron-perplexity/) |
+| [**ckg-mcp**](https://github.com/Yarmoluk/ckg-mcp) | 97-domain MCP server · drop-in knowledge layer for any agent stack · SHA-256 provenance per node | ![downloads](https://static.pepy.tech/badge/ckg-mcp/month) |
+| [**ckg-nvidia-ai**](https://github.com/Yarmoluk/ckg-nvidia-ai) | NVIDIA AI stack · 20 domains · 1,055 nodes · per-URL SHA-256 | ![downloads](https://static.pepy.tech/badge/ckg-nvidia-ai/month) |
+| [**ckg-nvidia-nemoclaw**](https://github.com/Yarmoluk/ckg-nvidia-nemoclaw) | NemoClaw · **F1 0.576** benchmarked · 55 nodes / 74 edges | ![downloads](https://static.pepy.tech/badge/ckg-nvidia-nemoclaw/month) |
+| [**ckg-agentforce**](https://github.com/Yarmoluk/ckg-agentforce) | Salesforce AgentForce · billing + permissions chains · rate-gated | ![downloads](https://static.pepy.tech/badge/ckg-agentforce/month) |
+| [**ckg-nemotron-perplexity**](https://github.com/Yarmoluk/ckg-nemotron-perplexity) | NVIDIA Nemotron + Perplexity Sonar · 2 domains · 83 nodes | ![downloads](https://static.pepy.tech/badge/ckg-nemotron-perplexity/month) |
 
 ```bash
 uvx ckg-mcp                 # any agent stack — 97 domains, MCP-native

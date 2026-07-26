@@ -78,9 +78,16 @@ F1 scales with hop depth: `0.374 → 0.772` at hop=5. RAG plateaus at hop=2.
 
 <div align="center">
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Yarmoluk&show_icons=true&hide_title=true&theme=dark&bg_color=0d1117&icon_color=0f6e56&text_color=8b949e&border_color=21262d&hide=issues&count_private=false)](https://github.com/Yarmoluk)
-&nbsp;&nbsp;
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Yarmoluk&layout=compact&theme=dark&bg_color=0d1117&text_color=8b949e&border_color=21262d&hide_title=true&langs_count=6)](https://github.com/Yarmoluk)
+[![GitHub Streak](https://streak-stats.demolab.com?user=Yarmoluk&theme=transparent&background=0d1117&border=21262d&ring=0f6e56&fire=0f6e56&currStreakLabel=0f6e56&sideLabels=8b949e&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9)](https://github.com/Yarmoluk)
+
+![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776ab)
+![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178c6)
+![MCP](https://img.shields.io/badge/MCP-0d1117?style=flat-square&logo=anthropic&logoColor=0f6e56)
+![Neo4j](https://img.shields.io/badge/Neo4j-0d1117?style=flat-square&logo=neo4j&logoColor=4581c3)
+![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=009688)
+![Docker](https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=2496ed)
+![Render](https://img.shields.io/badge/Render-0d1117?style=flat-square&logo=render&logoColor=46e3b7)
+![PyPI](https://img.shields.io/badge/PyPI-0d1117?style=flat-square&logo=pypi&logoColor=3775a9)
 
 ---
 

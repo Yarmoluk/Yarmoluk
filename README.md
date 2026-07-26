@@ -1,6 +1,6 @@
 <!-- TELEMETRY_START -->
 ```ansi
-[92mCONTEXT KING ▸ ckg-benchmark v0.6.2        graphifymd.com
+[92mModel for Language, Context for Knowledge ▸ ckg-benchmark v0.6.2
 ══════════════════════════════════════════════════════════════════════════
  BENCHMARK F1     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░]  0.471   +283% vs RAG
  TOKEN EFFICIENCY [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░]  91%     tokens saved vs RAG

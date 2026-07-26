@@ -19,8 +19,8 @@ CONTEXT KING                              graphifymd.com
  BENCHMARK F1    ████████████████░░░░░░░░   0.471   +283% vs RAG
  TOKEN EFFICIENCY ██████████████████████░░   91%     tokens saved vs RAG
  CKG DOMAINS     ████████████████████████   97      MCP-native · SHA-256
- PYPI / MONTH    ████████████░░░░░░░░░░░░   5,349   installs / mo
- MCP REQUESTS    █████████████░░░░░░░░░░░   267     30-day · 21 users
+ PYPI / MONTH    ░░░░░░░░░░░░░░░░░░░░░░░░   259   installs / mo
+ MCP REQUESTS    ████████████░░░░░░░░░░░░   267     30-day · 21 users
  TOKENS SAVED    █████████████████░░░░░░░   724k    this month vs RAG
 ──────────────────────────────────────────────────────────────────────────
  Own the context, rent the model.

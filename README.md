@@ -1,10 +1,8 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&size=18&duration=3000&pause=1200&color=0F6E56&center=true&vCenter=true&width=660&lines=Context+for+knowledge%2C+not+for+language.;Own+the+context%2C+rent+the+model.;97+domains+%C2%B7+269+tokens+%C2%B7+SHA-256+anchored.;Model+for+language%2C+context+for+knowledge.)](https://graphifymd.com)
+# Daniel Yarmoluk
 
-### Daniel Yarmoluk
-**Knowledge Graph Architect · Founder, [Graphify.md](https://graphifymd.com)**  
-Minneapolis, MN · patent pending
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=500&size=20&duration=3000&pause=1200&color=0F6E56&center=true&vCenter=true&width=660&lines=I+build+the+knowledge+layer+AI+agents+are+missing.;Knowledge+Graph+Architect+%C2%B7+Minneapolis%2C+MN;Founder%2C+Graphify.md;Own+the+context%2C+rent+the+model.)](https://graphifymd.com)
 
 [![PyPI downloads](https://img.shields.io/badge/PyPI-5%2C349%2Fmo-22c55e?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-5_live-0f6e56?style=flat-square)](https://registry.modelcontextprotocol.io)
@@ -62,15 +60,6 @@ uvx ckg-nvidia-nemoclaw     # NemoClaw — F1 0.576 benchmarked
 `ckg-benchmark v0.6.2` · 97 domains · [HuggingFace dataset](https://huggingface.co/datasets/danyarm/ckg-benchmark) · [paper](https://graphifymd.com/paper.html) · patent pending
 
 F1 scales with hop depth: `0.374 → 0.772` at hop=5. RAG plateaus at hop=2.
-
----
-
-## In the Ecosystem
-
-```
-[ OPEN ] microsoft/autogen#7353 — cryptographic action receipts for enterprise agent governance
-         ckg-knowledge-receipt: PARTIAL · canonical_envelope ✓ · anchoring pending external TSA
-```
 
 ---
 

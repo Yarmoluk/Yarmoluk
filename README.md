@@ -1,20 +1,20 @@
 <!-- TELEMETRY_START -->
 ```ansi
-[92mModel for Language, Context for Knowledge ▸ ckg-benchmark v0.6.2
+[92mModel for Language, Context for Knowledge ▸ ckg-benchmark v0.6.2
 ══════════════════════════════════════════════════════════════════════════
  BENCHMARK F1     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░]  0.471   +283% vs RAG
  TOKEN EFFICIENCY [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░]  91%     tokens saved vs RAG
  CKG DOMAINS      [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░]  97      SHA-256 · MCP-native
- TOKENS SAVED     [▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░]  727k    this month vs RAG
- SAVINGS AT SCALE [▓░░░░░░░░░░░░░░░░░]  $478    est · enterprise
+ TOKENS SAVED     [░░░░░░░░░░░░░░░░░░]  0    this month vs RAG
+ SAVINGS AT SCALE [░░░░░░░░░░░░░░░░░░]  $129   est · enterprise
 ══════════════════════════════════════════════════════════════════════════
- Own the context, rent the model.[0m
+ Own the context, rent the model.[0m
 ```
 <!-- TELEMETRY_END -->
 
 <div align="center">
 
-[![PyPI downloads](https://img.shields.io/badge/PyPI-1%2C381%2Fmo-22c55e?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
+[![PyPI downloads](https://img.shields.io/badge/PyPI-4%2C742%2Fmo-22c55e?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-5_live-0f6e56?style=flat-square)](https://registry.modelcontextprotocol.io)
 [![CKG domains](https://img.shields.io/badge/CKG_domains-97-1d4ed8?style=flat-square)](https://graphifymd.com)
 [![Benchmark F1](https://img.shields.io/badge/F1-0.471_+283%25_RAG-8b5cf6?style=flat-square)](https://graphifymd.com/paper.html)

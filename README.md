@@ -1,23 +1,13 @@
 <!-- TELEMETRY_START -->
-```ansi
-[92mModel for Language, Context for Knowledge ▸ ckg-benchmark v0.6.2
-══════════════════════════════════════════════════════════════════════════
- BENCHMARK F1     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░]  0.471   +283% vs RAG
- TOKEN EFFICIENCY [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░]  91%     tokens saved vs RAG
- CKG DOMAINS      [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░]  97      SHA-256 · MCP-native
- TOKENS SAVED     [░░░░░░░░░░░░░░░░░░]  0    this month vs RAG
- SAVINGS AT SCALE [░░░░░░░░░░░░░░░░░░]  $129   est · enterprise
-══════════════════════════════════════════════════════════════════════════
- Own the context, rent the model.[0m
-```
+![Model for Language, Context for Knowledge](hud.svg)
 <!-- TELEMETRY_END -->
 
 <div align="center">
 
-[![PyPI downloads](https://img.shields.io/badge/PyPI-4%2C742%2Fmo-22c55e?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
+[![PyPI downloads](https://img.shields.io/badge/PyPI-1%2C381%2Fmo-22c55e?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-5_live-0f6e56?style=flat-square)](https://registry.modelcontextprotocol.io)
 [![CKG domains](https://img.shields.io/badge/CKG_domains-97-1d4ed8?style=flat-square)](https://graphifymd.com)
-[![Benchmark F1](https://img.shields.io/badge/F1-0.471_+283%25_RAG-8b5cf6?style=flat-square)](https://graphifymd.com/paper.html)
+[![Benchmark F1](https://img.shields.io/badge/F1-0.471_+283%25_vs_RAG-8b5cf6?style=flat-square)](https://graphifymd.com/paper.html)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-danyarm-f59e0b?style=flat-square&logo=huggingface&logoColor=white)](https://huggingface.co/danyarm)
 [![Patent](https://img.shields.io/badge/patent-pending-7c3aed?style=flat-square)](https://graphifymd.com)
 
@@ -35,35 +25,52 @@
 
 ---
 
-## Deployed Packages
+Agents need certainty. LLMs give probability. **Compact Knowledge Graphs (CKGs)** are the missing layer — structured, auditable domain knowledge served over MCP. 269 tokens per query vs 2,982 for RAG. F1 0.471, +283% vs RAG baseline. SHA-256 provenance on every node. Drop-in MCP servers, no infra required.
 
-| Package | What it serves | Downloads |
-|---------|----------------|-----------|
-| [**ckg-mcp**](https://github.com/Yarmoluk/ckg-mcp) | 97-domain MCP server · drop-in knowledge layer for any agent stack · SHA-256 provenance per node | ![downloads](https://static.pepy.tech/badge/ckg-mcp/month) |
-| [**ckg-nvidia-ai**](https://github.com/Yarmoluk/ckg-nvidia-ai) | NVIDIA AI stack · 20 domains · 1,055 nodes · per-URL SHA-256 | ![downloads](https://static.pepy.tech/badge/ckg-nvidia-ai/month) |
-| [**ckg-nvidia-nemoclaw**](https://github.com/Yarmoluk/ckg-nvidia-nemoclaw) | NemoClaw · **F1 0.576** benchmarked · 55 nodes / 74 edges | ![downloads](https://static.pepy.tech/badge/ckg-nvidia-nemoclaw/month) |
-| [**ckg-agentforce**](https://github.com/Yarmoluk/ckg-agentforce) | Salesforce AgentForce · billing + permissions chains · rate-gated | ![downloads](https://static.pepy.tech/badge/ckg-agentforce/month) |
-| [**ckg-nemotron-perplexity**](https://github.com/Yarmoluk/ckg-nemotron-perplexity) | NVIDIA Nemotron + Perplexity Sonar · 2 domains · 83 nodes | ![downloads](https://static.pepy.tech/badge/ckg-nemotron-perplexity/month) |
+---
+
+## Packages
+
+| Package | Domain | F1 | Downloads |
+|---------|--------|----|-----------|
+| [**ckg-mcp**](https://github.com/Yarmoluk/ckg-mcp) | 97 domains · full stack | — | ![](https://static.pepy.tech/badge/ckg-mcp/month) |
+| [**ckg-nvidia-ai**](https://github.com/Yarmoluk/ckg-nvidia-ai) | NVIDIA AI · NIM · NeMo · 20 domains · 1,055 nodes | — | ![](https://static.pepy.tech/badge/ckg-nvidia-ai/month) |
+| [**ckg-nvidia-nemoclaw**](https://github.com/Yarmoluk/ckg-nvidia-nemoclaw) | NemoClaw · 55 nodes / 74 edges | **0.576** | ![](https://static.pepy.tech/badge/ckg-nvidia-nemoclaw/month) |
+| [**ckg-agentforce**](https://github.com/Yarmoluk/ckg-agentforce) | Salesforce AgentForce · billing + permissions | — | ![](https://static.pepy.tech/badge/ckg-agentforce/month) |
+| [**ckg-nemotron-perplexity**](https://github.com/Yarmoluk/ckg-nemotron-perplexity) | Nemotron + Perplexity Sonar · 83 nodes | — | ![](https://static.pepy.tech/badge/ckg-nemotron-perplexity/month) |
 
 ```bash
-uvx ckg-mcp                 # any agent stack — 97 domains, MCP-native
-uvx ckg-nvidia-ai           # NVIDIA AI · NIM · NeMo · NemoClaw
-uvx ckg-nvidia-nemoclaw     # NemoClaw — F1 0.576 benchmarked
+uvx ckg-mcp              # 97 domains — any agent stack
+uvx ckg-nvidia-ai        # NVIDIA AI · NIM · NeMo · NemoClaw
+uvx ckg-agentforce       # Salesforce AgentForce
 ```
 
 ---
 
 ## Benchmark
 
-| System | Macro F1 | Tokens/query | Ratio/Dollar Score |
-|--------|:--------:|:------------:|:------------------:|
-| **▸ CKG** | **0.471** | **269** | **0.00175** |
-| RAG | 0.123 | 2,982 | 0.0000413 |
-| GraphRAG | 0.120 | 3,450 | 0.0000452 |
+| System | Macro F1 | Tokens/query | Cost @ $10/1M |
+|--------|:--------:|:------------:|:-------------:|
+| **▸ CKG** | **0.471** | **269** | **$0.003** |
+| RAG | 0.123 | 2,982 | $0.030 |
+| GraphRAG | 0.120 | 3,450 | $0.035 |
 
-`ckg-benchmark v0.6.2` · 97 domains · [HuggingFace dataset](https://huggingface.co/datasets/danyarm/ckg-benchmark) · [paper](https://graphifymd.com/paper.html) · patent pending
+`ckg-benchmark v0.6.2` · 97 domains · [dataset](https://huggingface.co/datasets/danyarm/ckg-benchmark) · [paper](https://graphifymd.com/paper.html) · patent pending
 
 F1 scales with hop depth: `0.374 → 0.772` at hop=5. RAG plateaus at hop=2.
+
+---
+
+## Pricing
+
+| Tier | Calls | Price | Best for |
+|------|-------|-------|----------|
+| Free | 50/day | — | Evaluation |
+| **Dev** | Unlimited | **$10/yr** | Solo devs, small teams |
+| Pro | Unlimited + priority | $99/yr | Production |
+| Sealed | On-prem Docker appliance | $299 | Enterprise / air-gap |
+
+[**Upgrade → graphifymd.com/pricing**](https://graphifymd.com/pricing) · [Dev $10/yr](https://buy.stripe.com/00wbJ1gsYcm01tC52A1kA08)
 
 ---
 

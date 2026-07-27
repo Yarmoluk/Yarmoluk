@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="571" height="216">
+  <rect width="571" height="216" fill="#0d1117" rx="6"/>
+  <text y="29" font-family="'Courier New', 'Lucida Console', monospace" font-size="13" fill="#3fb950" xml:space="preserve">
+    <tspan x="20" dy="0">Model for Language, Context for Knowledge  ckg-benchmark v0.6.2</tspan>
+    <tspan x="20" dy="20">════════════════════════════════════════════════════════════════════</tspan>
+    <tspan x="20" dy="20"> BENCHMARK F1     [██████████████░░░░]  0.471   +283% vs RAG</tspan>
+    <tspan x="20" dy="20"> TOKEN EFFICIENCY [████████████████░░]  91%     tokens saved vs RAG</tspan>
+    <tspan x="20" dy="20"> CKG DOMAINS      [█████████████████░]  97      SHA-256 · MCP-native</tspan>
+    <tspan x="20" dy="20"> TOKENS SAVED     [▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░]  725k    this month vs RAG</tspan>
+    <tspan x="20" dy="20"> SAVINGS AT SCALE [▓░░░░░░░░░░░░░░░░░]  $478    est · enterprise</tspan>
+    <tspan x="20" dy="20">════════════════════════════════════════════════════════════════════</tspan>
+    <tspan x="20" dy="20"> Own the context, rent the model.</tspan>
+  </text>
+</svg>

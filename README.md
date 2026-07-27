@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![PyPI downloads](https://img.shields.io/badge/PyPI-960%2Fmo-22c55e?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
+[![PyPI downloads](https://img.shields.io/badge/PyPI-5%2C367%2Fmo-22c55e?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-5_live-0f6e56?style=flat-square)](https://registry.modelcontextprotocol.io)
 [![CKG domains](https://img.shields.io/badge/CKG_domains-97-1d4ed8?style=flat-square)](https://graphifymd.com)
 [![Benchmark F1](https://img.shields.io/badge/F1-0.471_+283%25_vs_RAG-8b5cf6?style=flat-square)](https://graphifymd.com/paper.html)
@@ -27,22 +27,30 @@
 
 Agents need certainty. LLMs give probability. **Compact Knowledge Graphs (CKGs)** are the missing layer — structured, auditable domain knowledge served over MCP. 269 tokens per query vs 2,982 for RAG. F1 0.471, +283% vs RAG baseline. SHA-256 provenance on every node. Drop-in MCP servers, no infra required.
 
+**New: CKG Router** — deterministic context + model routing from graph depth. `route_query()` returns the right subgraph AND the right model tier (haiku/sonnet/opus) derived from hop count. No heuristic — the graph decides. 4× more accurate, 90% cheaper, routed automatically.
+
 ---
 
 ## Packages
 
 | Package | Domain | F1 | Downloads |
 |---------|--------|----|-----------|
-| [**ckg-mcp**](https://github.com/Yarmoluk/ckg-mcp) | 97 domains · full stack | — | ![](https://static.pepy.tech/badge/ckg-mcp/month) |
-| [**ckg-nvidia-ai**](https://github.com/Yarmoluk/ckg-nvidia-ai) | NVIDIA AI · NIM · NeMo · 20 domains · 1,055 nodes | — | ![](https://static.pepy.tech/badge/ckg-nvidia-ai/month) |
-| [**ckg-nvidia-nemoclaw**](https://github.com/Yarmoluk/ckg-nvidia-nemoclaw) | NemoClaw · 55 nodes / 74 edges | **0.576** | ![](https://static.pepy.tech/badge/ckg-nvidia-nemoclaw/month) |
-| [**ckg-agentforce**](https://github.com/Yarmoluk/ckg-agentforce) | Salesforce AgentForce · billing + permissions | — | ![](https://static.pepy.tech/badge/ckg-agentforce/month) |
+| [**ckg-mcp**](https://github.com/Yarmoluk/ckg-mcp) | 97 domains · full stack · CKG Router | — | ![](https://static.pepy.tech/badge/ckg-mcp/month) |
+| [**ckg-nvidia-ai**](https://github.com/Yarmoluk/ckg-nvidia-ai) | NVIDIA AI · NIM · NeMo · 20 domains · 1,055 nodes · CKG Router | — | ![](https://static.pepy.tech/badge/ckg-nvidia-ai/month) |
+| [**ckg-nvidia-nemoclaw**](https://github.com/Yarmoluk/ckg-nvidia-nemoclaw) | NemoClaw · 55 nodes / 74 edges · CKG Router | **0.576** | ![](https://static.pepy.tech/badge/ckg-nvidia-nemoclaw/month) |
+| [**ckg-agentforce**](https://github.com/Yarmoluk/ckg-agentforce) | Salesforce AgentForce · billing + permissions · CKG Router | — | ![](https://static.pepy.tech/badge/ckg-agentforce/month) |
 | [**ckg-nemotron-perplexity**](https://github.com/Yarmoluk/ckg-nemotron-perplexity) | Nemotron + Perplexity Sonar · 83 nodes | — | ![](https://static.pepy.tech/badge/ckg-nemotron-perplexity/month) |
+| [**langchain-ckg**](https://github.com/Yarmoluk/langchain-ckg) | LangChain retriever · CKGRetriever + CKGHostedRetriever | — | ![](https://static.pepy.tech/badge/langchain-ckg/month) |
 
 ```bash
 uvx ckg-mcp              # 97 domains — any agent stack
 uvx ckg-nvidia-ai        # NVIDIA AI · NIM · NeMo · NemoClaw
 uvx ckg-agentforce       # Salesforce AgentForce
+
+# CKG Router — deterministic context + model routing
+route_query("TensorRT-LLM", "nvidia-tensorrt-triton")
+# → model_tier: opus · reasoning: sparql_cot · why: 4-hop chain
+# → context subgraph: 847 tokens (not 10,000)
 ```
 
 ---

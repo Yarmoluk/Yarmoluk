@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![PyPI downloads](https://img.shields.io/badge/PyPI-8%2C460%2Fmo-22c55e?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
+[![PyPI downloads](https://img.shields.io/badge/PyPI-13%2C128%2Fmo-22c55e?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-5_live-0f6e56?style=flat-square)](https://registry.modelcontextprotocol.io)
 [![CKG domains](https://img.shields.io/badge/CKG_domains-97-1d4ed8?style=flat-square)](https://graphifymd.com)
 [![Benchmark F1](https://img.shields.io/badge/F1-0.471_+283%25_vs_RAG-8b5cf6?style=flat-square)](https://graphifymd.com/paper.html)

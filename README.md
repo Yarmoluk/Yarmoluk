@@ -1,102 +1,144 @@
-<!-- TELEMETRY_START -->
-![Model for Language, Context for Knowledge](hud.svg)
-<!-- TELEMETRY_END -->
-
 <div align="center">
 
-[![PyPI downloads](https://img.shields.io/badge/PyPI-12%2C342%2Fmo-22c55e?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
-[![MCP Registry](https://img.shields.io/badge/MCP_Registry-5_live-0f6e56?style=flat-square)](https://registry.modelcontextprotocol.io)
-[![CKG domains](https://img.shields.io/badge/CKG_domains-97-1d4ed8?style=flat-square)](https://graphifymd.com)
-[![Benchmark F1](https://img.shields.io/badge/F1-0.471_+283%25_vs_RAG-8b5cf6?style=flat-square)](https://graphifymd.com/paper.html)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-danyarm-f59e0b?style=flat-square&logo=huggingface&logoColor=white)](https://huggingface.co/danyarm)
+<img src="hud.svg" alt="CKG benchmark: macro-F1 0.471, 91% token efficiency, 0.772 at five hops, 307 domain graphs, 6 live MCP services" width="640">
+
+### Daniel Yarmoluk
+
+**AI Solutions Architect · Forward Deployed Engineer**
+
+I build the protocol layer that lets agents act on trustworthy context.
+
+[![Benchmark](https://img.shields.io/badge/macro--F1-0.471_vs_0.123_RAG-1f6feb?style=flat-square)](https://github.com/Yarmoluk/ckg-benchmark)
+[![Tokens](https://img.shields.io/badge/tokens-269_vs_2%2C982-8b5cf6?style=flat-square)](https://github.com/Yarmoluk/ckg-benchmark)
+[![Domains](https://img.shields.io/badge/domain_graphs-307-0f6e56?style=flat-square)](https://graphifymd.com)
+[![PyPI](https://img.shields.io/badge/PyPI-12_packages-3775A9?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-danyarm-f59e0b?style=flat-square)](https://huggingface.co/danyarm)
 [![Patent](https://img.shields.io/badge/patent-pending-7c3aed?style=flat-square)](https://graphifymd.com)
 
-[![LangChain](https://img.shields.io/badge/LangChain-compatible-1c7c2c?style=flat-square&logo=chainlink&logoColor=white)](https://github.com/Yarmoluk/langchain-ckg)
-[![LlamaIndex](https://img.shields.io/badge/LlamaIndex-compatible-6366f1?style=flat-square)](https://github.com/Yarmoluk/llamaindex-ckg)
-[![CrewAI](https://img.shields.io/badge/CrewAI-compatible-ef4444?style=flat-square)](https://github.com/Yarmoluk/crewai-ckg)
-[![Zep](https://img.shields.io/badge/Zep-compatible-0ea5e9?style=flat-square)](https://github.com/Yarmoluk/zep-ckg)
-[![ElevenLabs](https://img.shields.io/badge/ElevenLabs-compatible-111827?style=flat-square)](https://elevenlabs.io)
-[![NVIDIA](https://img.shields.io/badge/NVIDIA-compatible-76b900?style=flat-square&logo=nvidia&logoColor=white)](https://github.com/Yarmoluk/ckg-nvidia-ai)
-[![Meta Llama](https://img.shields.io/badge/Meta_Llama-compatible-0668E1?style=flat-square)](https://github.com/Yarmoluk/ckg-mcp)
-[![Smithery](https://img.shields.io/badge/Smithery-listed-ff6b35?style=flat-square)](https://smithery.ai/server/@Yarmoluk/ckg-mcp)
-[![Anthropic](https://img.shields.io/badge/Anthropic_MCP-registry-0f6e56?style=flat-square&logo=anthropic&logoColor=white)](https://registry.modelcontextprotocol.io)
+[graphifymd.com](https://graphifymd.com) · [LinkedIn](https://linkedin.com/in/danyarmoluk) · [PyPI](https://pypi.org/user/danyarm/) · [Hugging&nbsp;Face](https://huggingface.co/danyarm)
 
 </div>
 
 ---
 
-Agents need certainty. LLMs give probability. **Compact Knowledge Graphs (CKGs)** are the missing layer — structured, auditable domain knowledge served over MCP. 269 tokens per query vs 2,982 for RAG. F1 0.471, +283% vs RAG baseline. SHA-256 provenance on every node. Drop-in MCP servers, no infra required.
+## Try it in 30 seconds
 
-**New: CKG Router** — deterministic context + model routing from graph depth. `route_query()` returns the right subgraph AND the right model tier (haiku/sonnet/opus) derived from hop count. No heuristic — the graph decides. 4× more accurate, 90% cheaper, routed automatically.
+Every MCP server I run publishes an [A2A agent card](https://ckg-nvidia-ai.onrender.com/.well-known/agent-card.json) that states its own economics, so a calling agent can decide whether invoking is worth it **before** it spends anything:
+
+```bash
+curl -s https://ckg-nvidia-ai.onrender.com/.well-known/agent-card.json | jq .economics
+```
+
+```jsonc
+{
+  "price_usd_per_call": 0.010,
+  "mean_tokens_returned": 269,
+  "baseline_mean_tokens": 2982,      // RAG over the same corpus
+  "tokens_saved_per_call": 2713,
+  "breakeven_input_price_usd_per_mtok": 3.69,
+  "answer_quality_macro_f1": 0.471,
+  "baseline_macro_f1": 0.123,
+  "decision_rule": "…pays for itself on token cost alone when your input price
+                    exceeds $3.69 per million tokens. Below that, invoke only
+                    when answer quality matters."
+}
+```
+
+That last field is the point: **it tells you when not to call it.** A card that claims savings at every price is one a good agent should distrust.
 
 ---
 
-## Packages
+## The Compressed Knowledge Graph
 
-| Package | Domain | F1 | Downloads |
-|---------|--------|----|-----------|
-| [**ckg-mcp**](https://github.com/Yarmoluk/ckg-mcp) | 97 domains · full stack · CKG Router | — | ![](https://static.pepy.tech/badge/ckg-mcp/month) |
-| [**ckg-nvidia-ai**](https://github.com/Yarmoluk/ckg-nvidia-ai) | NVIDIA AI · NIM · NeMo · 20 domains · 1,055 nodes · CKG Router | — | ![](https://static.pepy.tech/badge/ckg-nvidia-ai/month) |
-| [**ckg-nvidia-nemoclaw**](https://github.com/Yarmoluk/ckg-nvidia-nemoclaw) | NemoClaw · 55 nodes / 74 edges · CKG Router | **0.576** | ![](https://static.pepy.tech/badge/ckg-nvidia-nemoclaw/month) |
-| [**ckg-agentforce**](https://github.com/Yarmoluk/ckg-agentforce) | Salesforce AgentForce · billing + permissions · CKG Router | — | ![](https://static.pepy.tech/badge/ckg-agentforce/month) |
-| [**ckg-nemotron-perplexity**](https://github.com/Yarmoluk/ckg-nemotron-perplexity) | Nemotron + Perplexity Sonar · 83 nodes | — | ![](https://static.pepy.tech/badge/ckg-nemotron-perplexity/month) |
-| [**langchain-ckg**](https://github.com/Yarmoluk/langchain-ckg) | LangChain retriever · CKGRetriever + CKGHostedRetriever | — | ![](https://static.pepy.tech/badge/langchain-ckg/month) |
+RAG chunks prose and retrieves by embedding similarity, which discards the relationships. A CKG stores relationships as **typed, authored edges** and traverses them. Every answer traces to a source URL and a SHA-256 of the bytes it was authored from.
 
-```bash
-uvx ckg-mcp              # 97 domains — any agent stack
-uvx ckg-nvidia-ai        # NVIDIA AI · NIM · NeMo · NemoClaw
-uvx ckg-agentforce       # Salesforce AgentForce
+**Benchmarked against RAG and Microsoft GraphRAG** — 44 domains, 7,758 queries, locked at v0.6.2:
 
-# CKG Router — deterministic context + model routing
-route_query("TensorRT-LLM", "nvidia-tensorrt-triton")
-# → model_tier: opus · reasoning: sparql_cot · why: 4-hop chain
-# → context subgraph: 847 tokens (not 10,000)
+| | **CKG** | RAG | GraphRAG |
+|:--|--:|--:|--:|
+| macro-F1 | **0.471** | 0.123 | 0.120 |
+| tokens per query | **269** | 2,982 | — |
+| F1 at 5-hop depth | **0.772** | 0.170 | — |
+
+The last row matters most. The advantage **grows with question complexity**, because multi-hop composition is exactly where embedding methods are weakest.
+
+**[→ Clone the benchmark and re-run it](https://github.com/Yarmoluk/ckg-benchmark)** · [Dataset on Hugging Face](https://huggingface.co/datasets/danyarm/ckg-benchmark) (CC-BY-4.0)
+
+> The repo includes a reconciliation document correcting my own published cost figures — an earlier version priced CKG and the baselines against different models, which inflated the ratio. Numbers I can't defend are worse than no numbers.
+
+---
+
+## Protocol work
+
+<table>
+<tr><td width="50%" valign="top">
+
+**Model Context Protocol**
+
+Tool and output schema design · JSON-RPC initialize handshake · streamable HTTP and SSE transport · session management · DNS-rebinding transport security · per-method metering · HTTP 402 payment rails · MCP-native observability
+
+Built, shipped and debugged in production.
+
+</td><td width="50%" valign="top">
+
+**Agent-to-Agent**
+
+Agent cards advertising skills, auth, payment terms and machine-readable economics · x402 / HTTP 402 · EIP-3009 signed authorizations · Coinbase CDP facilitator · Base settlement · ERC-8004 agent identity
+
+</td></tr>
+</table>
+
+**Framework-agnostic by protocol.** The same servers register unchanged in Semantic Kernel, LangChain, LangGraph, AutoGen, CrewAI, Claude and Cursor — integration happens at the protocol layer, so framework choice stays the caller's decision.
+
+```python
+# Microsoft Semantic Kernel consumes an MCP server directly — no bridging code
+from semantic_kernel import Kernel
+from semantic_kernel.connectors.mcp import MCPStreamableHttpPlugin
+
+async with MCPStreamableHttpPlugin(
+    name="ckg", url="https://ckg-nvidia-ai.onrender.com/mcp"
+) as plugin:
+    kernel = Kernel()
+    kernel.add_plugin(plugin, plugin_name="ckg")   # 9 tools → kernel functions
 ```
 
 ---
 
-## Benchmark
+## Published packages
 
-| System | Macro F1 | Tokens/query | Cost @ $10/1M |
-|--------|:--------:|:------------:|:-------------:|
-| **▸ CKG** | **0.471** | **269** | **$0.003** |
-| RAG | 0.123 | 2,982 | $0.030 |
-| GraphRAG | 0.120 | 3,450 | $0.035 |
+<details open>
+<summary><b>12 packages on PyPI · 100+ releases · 6 running as live MCP services</b></summary>
+<br>
 
-`ckg-benchmark v0.6.2` · 97 domains · [dataset](https://huggingface.co/datasets/danyarm/ckg-benchmark) · [paper](https://graphifymd.com/paper.html) · patent pending
+| package | serves |
+|:--|:--|
+| [**ckg-nvidia-ai**](https://pypi.org/project/ckg-nvidia-ai/) | NVIDIA developer stack — 20 domains, metered free tier, x402 payment challenge |
+| [**ckg-nvidia-nemoclaw**](https://pypi.org/project/ckg-nvidia-nemoclaw/) | NemoClaw stack — typed traversal with per-node provenance |
+| [**ckg-agentforce**](https://pypi.org/project/ckg-agentforce/) | Salesforce Agentforce — license-gated tool surface |
+| [**langchain-ckg**](https://pypi.org/project/langchain-ckg/) | LangChain retriever — API-key auth, 402 handling |
+| [**ckg-ai-platforms**](https://pypi.org/project/ckg-ai-platforms/) · [**ckg-nemotron-perplexity**](https://pypi.org/project/ckg-nemotron-perplexity/) · [**ckg-agent-protocols**](https://pypi.org/project/ckg-agent-protocols/) | domain graphs |
 
-F1 scales with hop depth: `0.374 → 0.772` at hop=5. RAG plateaus at hop=2.
+</details>
+
+<details>
+<summary><b>Also here</b></summary>
+<br>
+
+- **[zep-ckg](https://github.com/Yarmoluk/zep-ckg)** — Graphiti (Zep) plus CKG as a two-layer context agent
+- **[Agent Skills](https://github.com/Yarmoluk/skills-1)** — public Claude Code skills
+
+</details>
 
 ---
 
-## Pricing
+## Before this
 
-| Tier | Calls | Price | Best for |
-|------|-------|-------|----------|
-| Free | 50/day | — | Evaluation |
-| **Dev** | Unlimited | **$10/yr** | Solo devs, small teams |
-| Pro | Unlimited + priority | $99/yr | Production |
-| Sealed | On-prem Docker appliance | $299 | Enterprise / air-gap |
+Fifteen years of enterprise architecture. Fortune 500 AI delivery at **Slalom** across healthcare, retail and supply chain, including production-readiness and evaluation frameworks for HIPAA-regulated environments. Earlier: industrial IoT and commercial AI architecture at **West Monroe**, and a data science and IoT practice built from zero at **ATEK**.
 
-[**Upgrade → graphifymd.com/pricing**](https://graphifymd.com/pricing) · [Dev $10/yr](https://buy.stripe.com/00wbJ1gsYcm01tC52A1kA08)
-
----
+Adjunct professor, **University of St. Thomas** — Graduate AI Systems. Featured in CIO Dive. Patent pending.
 
 <div align="center">
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=Yarmoluk&theme=transparent&background=0d1117&border=21262d&ring=0f6e56&fire=0f6e56&currStreakLabel=0f6e56&sideLabels=8b949e&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9)](https://github.com/Yarmoluk)
-
-![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776ab)
-![TypeScript](https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3178c6)
-![MCP](https://img.shields.io/badge/MCP-0d1117?style=flat-square&logo=anthropic&logoColor=0f6e56)
-![Neo4j](https://img.shields.io/badge/Neo4j-0d1117?style=flat-square&logo=neo4j&logoColor=4581c3)
-![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=009688)
-![Docker](https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=2496ed)
-![Render](https://img.shields.io/badge/Render-0d1117?style=flat-square&logo=render&logoColor=46e3b7)
-![PyPI](https://img.shields.io/badge/PyPI-0d1117?style=flat-square&logo=pypi&logoColor=3775a9)
-
----
-
-[graphifymd.com](https://graphifymd.com) · [LinkedIn](https://www.linkedin.com/in/danyarmoluk/) · [PyPI](https://pypi.org/user/danyarm/) · [HuggingFace](https://huggingface.co/danyarm) · [MCP Registry](https://registry.modelcontextprotocol.io)
+**Open to AI Solutions Architect, Forward Deployed Engineer and Agentic AI Architect roles.**
 
 </div>

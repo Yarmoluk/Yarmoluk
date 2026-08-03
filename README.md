@@ -1,12 +1,19 @@
 <div align="center">
 
+<img src="stack.svg" alt="The stack: any agent framework, over MCP, to a Compressed Knowledge Graph, with SHA-256 source provenance on every answer" width="640">
+
+### Hi, I'm Daniel 👋
+
+**AI Solutions Architect · Forward Deployed Engineer · Minneapolis, MN**
+
+Fifteen years of enterprise architecture, most recently at Slalom delivering Fortune 500 AI.
+For the last year I've been building the agent infrastructure above — protocol, provenance,
+payment, and the benchmark that says whether any of it actually works.
+
+I like the deployed half of the job: the customer's environment, their constraints, the
+failure modes that never show up in a demo.
+
 <img src="hud.svg" alt="CKG benchmark: macro-F1 0.471, 91% token efficiency, 0.772 at five hops, 307 domain graphs, 6 live MCP services" width="640">
-
-### Daniel Yarmoluk
-
-**AI Solutions Architect · Forward Deployed Engineer**
-
-I build the protocol layer that lets agents act on trustworthy context.
 
 [![Benchmark](https://img.shields.io/badge/macro--F1-0.471_vs_0.123_RAG-1f6feb?style=flat-square)](https://github.com/Yarmoluk/ckg-benchmark)
 [![Tokens](https://img.shields.io/badge/tokens-269_vs_2%2C982-8b5cf6?style=flat-square)](https://github.com/Yarmoluk/ckg-benchmark)

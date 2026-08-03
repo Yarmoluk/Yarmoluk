@@ -6,10 +6,12 @@
 
 **AI Solutions Architect · Forward Deployed Engineer · Minneapolis, MN**
 
-Fifteen years of enterprise architecture, most recently at Slalom delivering Fortune 500 AI.
-For the last year I've been building the agent infrastructure above — protocol, provenance,
-payment, and the benchmark that says whether any of it actually works.
+I work on **context architecture** — the layer between an agent and everything it is
+expected to know. **Context routing** decides which knowledge an agent gets and what it
+costs to get it. The **knowledge layer** underneath is typed and traversable, so every
+answer traces to a source instead of being reconstructed from similarity.
 
+Fifteen years of enterprise architecture, most recently at Slalom delivering Fortune 500 AI.
 I like the deployed half of the job: the customer's environment, their constraints, the
 failure modes that never show up in a demo.
 

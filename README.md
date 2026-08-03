@@ -15,6 +15,8 @@ I build the protocol layer that lets agents act on trustworthy context.
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-danyarm-f59e0b?style=flat-square)](https://huggingface.co/danyarm)
 [![Patent](https://img.shields.io/badge/patent-pending-7c3aed?style=flat-square)](https://graphifymd.com)
 
+**[Portfolio &amp; resume &rarr;](https://yarmoluk.github.io)**
+
 [graphifymd.com](https://graphifymd.com) · [LinkedIn](https://linkedin.com/in/danyarmoluk) · [PyPI](https://pypi.org/user/danyarm/) · [Hugging&nbsp;Face](https://huggingface.co/danyarm)
 
 </div>
@@ -140,5 +142,7 @@ Adjunct professor, **University of St. Thomas** — Graduate AI Systems. Feature
 <div align="center">
 
 **Open to AI Solutions Architect, Forward Deployed Engineer and Agentic AI Architect roles.**
+
+[**Resume**](https://yarmoluk.github.io#resume) · [daniel.yarmoluk@gmail.com](mailto:daniel.yarmoluk@gmail.com)
 
 </div>

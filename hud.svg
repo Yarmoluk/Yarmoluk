@@ -1,14 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="222" role="img" aria-label="CKG benchmark summary">
-  <rect width="640" height="222" fill="#0d1117" rx="8"/>
-  <text y="16" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12.5" fill="#3fb950" xml:space="preserve">
-    <tspan x="22" dy="14">Model for Language, Context for Knowledge  ▸  ckg-benchmark v0.6.2</tspan>
-    <tspan x="22" dy="17" fill="#1f6feb">═════════════════════════════════════════════════════════════════════</tspan>
-    <tspan x="22" dy="21">ANSWER QUALITY    <tspan fill="#58a6ff">[██████████████░░░░]</tspan>  <tspan fill="#e6edf3">0.471  </tspan><tspan fill="#7d8590">macro-F1  ·  +283% vs RAG</tspan></tspan>
-    <tspan x="22" dy="21">TOKEN EFFICIENCY  <tspan fill="#58a6ff">[████████████████░░]</tspan>  <tspan fill="#e6edf3">91%    </tspan><tspan fill="#7d8590">269 vs 2,982 tokens per query</tspan></tspan>
-    <tspan x="22" dy="21">MULTI-HOP  5 HOPS <tspan fill="#58a6ff">[█████████████████░]</tspan>  <tspan fill="#e6edf3">0.772  </tspan><tspan fill="#7d8590">RAG stays flat at 0.170</tspan></tspan>
-    <tspan x="22" dy="21">DOMAIN GRAPHS     <tspan fill="#58a6ff">[██████████████████]</tspan>  <tspan fill="#e6edf3">307    </tspan><tspan fill="#7d8590">typed edges  ·  SHA-256 provenance</tspan></tspan>
-    <tspan x="22" dy="21">LIVE MCP SERVICES <tspan fill="#58a6ff">[███████████████░░░]</tspan>  <tspan fill="#e6edf3">6      </tspan><tspan fill="#7d8590">A2A agent cards  ·  x402 rails</tspan></tspan>
-    <tspan x="22" dy="19" fill="#1f6feb">═════════════════════════════════════════════════════════════════════</tspan>
-    <tspan x="22" dy="20" fill="#e6edf3">The graph doesn’t guess — it traverses.</tspan>
+<svg xmlns="http://www.w3.org/2000/svg" width="587" height="214">
+  <rect width="587" height="214" fill="#0d1117" rx="6"/>
+  <text y="14" font-family="'Courier New', 'Lucida Console', monospace" font-size="13" fill="#3fb950" xml:space="preserve">
+
+  <tspan x="20" dy="0">Model for Language, Context for Knowledge ▸ ckg-benchmark v0.6.2</tspan>
+  <tspan x="20" dy="20">══════════════════════════════════════════════════════════════════════</tspan>
+  <tspan x="20" dy="20"> BENCHMARK F1     [██████████████░░░░]  0.471   +283% vs RAG</tspan>
+  <tspan x="20" dy="20"> TOKEN EFFICIENCY [████████████████░░]  91%     tokens saved vs RAG</tspan>
+  <tspan x="20" dy="20"> CKG DOMAINS      [█████████████████░]  97      SHA-256 · MCP-native</tspan>
+  <tspan x="20" dy="20"> TOKENS SAVED     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓]  27.6M   this month vs RAG</tspan>
+  <tspan x="20" dy="20"> SAVINGS AT SCALE [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓]  $15.6k  est · enterprise</tspan>
+  <tspan x="20" dy="20">══════════════════════════════════════════════════════════════════════</tspan>
+  <tspan x="20" dy="20"> Own the context, rent the model.</tspan>
   </text>
 </svg>

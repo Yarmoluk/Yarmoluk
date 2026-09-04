@@ -7,8 +7,8 @@
   <tspan x="20" dy="20"> BENCHMARK F1     [██████████████░░░░]  0.471   +283% vs RAG</tspan>
   <tspan x="20" dy="20"> TOKEN EFFICIENCY [████████████████░░]  91%     tokens saved vs RAG</tspan>
   <tspan x="20" dy="20"> CKG DOMAINS      [█████████████████░]  97      SHA-256 · MCP-native</tspan>
-  <tspan x="20" dy="20"> TOKENS SAVED     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓]  84.8M   this month vs RAG</tspan>
-  <tspan x="20" dy="20"> SAVINGS AT SCALE [░░░░░░░░░░░░░░░░░░]  $0      est · enterprise</tspan>
+  <tspan x="20" dy="20"> TOKENS SAVED     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓]  86.7M   this month vs RAG</tspan>
+  <tspan x="20" dy="20"> SAVINGS AT SCALE [▓░░░░░░░░░░░░░░░░░]  $448    est · enterprise</tspan>
   <tspan x="20" dy="20">══════════════════════════════════════════════════════════════════════</tspan>
   <tspan x="20" dy="20"> Own the context, rent the model.</tspan>
   </text>

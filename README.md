@@ -40,11 +40,13 @@ Fifteen years in enterprise architecture, most recently delivering Fortune 500 A
 | **Agent integration** | Delivers graph context through LangChain/LangGraph or an MCP tool interface. | [CKGRetriever in LangChain's directory](https://docs.langchain.com/oss/python/integrations/retrievers#:~:text=CKGRetriever) |
 | **Evaluation** | Measures answer quality, token use and multi-hop behavior against explicit baselines. | [Benchmark paper](https://github.com/Yarmoluk/ckg-benchmark/blob/main/paper/main.pdf) |
 
-### A concrete LangChain integration
+### LangChain and LangGraph
 
-I built [`langchain-ckg`](https://pypi.org/project/langchain-ckg/), an independently maintained retriever that turns graph lookups into LangChain `Document` results. `CKGRetriever` appears in [LangChain's retriever directory](https://docs.langchain.com/oss/python/integrations/retrievers#:~:text=CKGRetriever). The reviewed release bundles 11 domain graphs, runs locally without an embedding API, and can be used as a tool inside a LangGraph workflow.
+I built [`langchain-ckg`](https://pypi.org/project/langchain-ckg/), an independently maintained retriever that turns graph lookups into LangChain `Document` results. `CKGRetriever` appears in [LangChain's retriever directory](https://docs.langchain.com/oss/python/integrations/retrievers#:~:text=CKGRetriever). The published 0.6.0 release bundles 11 domain graphs and runs locally without an embedding API.
 
-The package and [CKG benchmark](https://github.com/Yarmoluk/ckg-benchmark) are separate projects. Benchmark results below measure CKG retrieval, not a performance guarantee for this integration.
+**Current focus:** finishing a developer guide with a quickstart, retriever tool, LangGraph workflow, and Deep Agents skill-guided retrieval example. The examples use the published 0.6.0 API; the candidate docs and examples have been exercised with tracing and import telemetry disabled and are being finalized for publication.
+
+This is an independent ecosystem integration, not a contribution to LangChain core. The package and [CKG benchmark](https://github.com/Yarmoluk/ckg-benchmark) are separate projects; benchmark results below measure CKG retrieval, not a performance guarantee for this integration.
 
 ---
 

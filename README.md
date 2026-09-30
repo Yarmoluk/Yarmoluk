@@ -14,6 +14,19 @@ Fifteen years in enterprise architecture, most recently delivering Fortune 500 A
 
 [LinkedIn](https://linkedin.com/in/danyarmoluk) · [Graphify.md](https://graphifymd.com) · [PyPI](https://pypi.org/user/danyarm/) · [Hugging Face](https://huggingface.co/danyarm)
 
+<p align="center">
+  <a href="https://github.com/Yarmoluk/ckg-benchmark"><img src="https://img.shields.io/badge/macro--F1-0.471_vs_0.123_RAG-1f6feb?style=flat-square" alt="Benchmark macro F1 0.471 versus RAG 0.123"></a>
+  <a href="https://github.com/Yarmoluk/ckg-benchmark"><img src="https://img.shields.io/badge/tokens-269_vs_2%2C982-8b5cf6?style=flat-square" alt="269 versus 2,982 tokens per query"></a>
+  <a href="https://graphifymd.com"><img src="https://img.shields.io/badge/domain_graphs-307-0f6e56?style=flat-square" alt="307 domain graphs"></a>
+  <a href="https://pypi.org/user/danyarm/"><img src="https://img.shields.io/badge/PyPI-12_packages-3775A9?style=flat-square&logo=pypi&logoColor=white" alt="12 packages on PyPI"></a>
+  <a href="https://huggingface.co/danyarm"><img src="https://img.shields.io/badge/Hugging_Face-danyarm-f59e0b?style=flat-square" alt="Daniel on Hugging Face"></a>
+  <a href="https://graphifymd.com"><img src="https://img.shields.io/badge/patent-pending-7c3aed?style=flat-square" alt="Patent pending"></a>
+  <a href="https://docs.langchain.com/oss/python/integrations/retrievers#:~:text=CKGRetriever"><img src="https://img.shields.io/badge/LangChain-retriever_directory-125a44?style=flat-square" alt="Listed in LangChain's retriever directory"></a>
+  <a href="https://github.com/Yarmoluk/cognify-skills"><img src="https://img.shields.io/badge/Agent_Skills-Cognify-FF6B35?style=flat-square" alt="Cognify Agent Skills"></a>
+  <a href="https://squidfunk.github.io/mkdocs-material/"><img src="https://img.shields.io/badge/MkDocs-Material-526CFE?style=flat-square&logo=MaterialForMkDocs&logoColor=white" alt="MkDocs Material"></a>
+  <a href="https://yarmoluk.github.io"><img src="https://img.shields.io/badge/Sites-GitHub_Pages-222222?style=flat-square&logo=github&logoColor=white" alt="Sites published on GitHub Pages"></a>
+</p>
+
 ---
 
 ## The work
@@ -56,6 +69,14 @@ The [locked v0.6.2 benchmark](https://github.com/Yarmoluk/ckg-benchmark/blob/mai
 [Read the paper](https://github.com/Yarmoluk/ckg-benchmark/blob/main/paper/main.pdf) · [Re-run the benchmark](https://github.com/Yarmoluk/ckg-benchmark) · [Dataset](https://huggingface.co/datasets/danyarm/ckg-benchmark)
 
 The benchmark repo also reconciles an earlier cost comparison: the original figures priced CKG and its baselines against different models. Correcting that comparison matters more than keeping an impressive number.
+
+---
+
+## Skills and learning systems
+
+I build **reusable Agent Skills** and **intelligent textbooks**: structured workflows that turn expertise into tools people can use, teach and improve. My [Custom Skill Developer guide](https://yarmoluk.github.io/custom-skill-developer/) covers skill design, quality scoring, routing and pipelines; [Cognify Skills](https://github.com/Yarmoluk/cognify-skills) is the production skill collection. I build and publish these learning systems with **MkDocs Material**, including the [AI Capability Portfolio](https://yarmoluk.github.io/ai-capability-portfolio/).
+
+[Custom Skill Developer](https://github.com/Yarmoluk/custom-skill-developer) · [Cognify Skills](https://github.com/Yarmoluk/cognify-skills) · [Public Claude Code skills](https://github.com/Yarmoluk/skills-1) · [AI Capability Portfolio](https://yarmoluk.github.io/ai-capability-portfolio/)
 
 ---
 

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="356" viewBox="0 0 640 356" role="img" aria-label="Context architecture: agents, context routing over MCP, and a knowledge layer with SHA-256 source provenance on every answer">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="356" viewBox="0 0 640 356" role="img" aria-label="Context architecture: agents, context routing over MCP, typed knowledge graphs and source evidence">
   <defs>
     <style>
       .m{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace}
@@ -26,13 +26,13 @@
   <text class="m det" x="46" y="104" fill="#7d8590">Claude · Copilot · Cursor · LangChain · Semantic Kernel · CrewAI · AutoGen</text>
 
   <line x1="320" y1="114" x2="320" y2="134" stroke="#30475e" stroke-width="1.5" marker-end="url(#a)"/>
-  <text class="m cap" x="332" y="129" fill="#58a6ff">one server, unchanged, in every framework</text>
+  <text class="m cap" x="332" y="129" fill="#58a6ff">shared tools through the MCP interface</text>
 
   <!-- layer 2 : context routing -->
   <rect x="30" y="138" width="580" height="76" rx="6" fill="#161b22" stroke="#1f6feb" stroke-opacity=".45"/>
   <rect x="30" y="138" width="3.5" height="76" rx="1.5" fill="#1f6feb"/>
   <text class="m lbl" x="46" y="158" fill="#e6edf3">CONTEXT ROUTING</text>
-  <text class="m met" x="596" y="158" fill="#e6edf3" text-anchor="end">6 live  ·  269 tokens vs RAG 2,982</text>
+  <text class="m met" x="596" y="158" fill="#e6edf3" text-anchor="end">domain · subgraph · access · cost</text>
   <text class="m det" x="46" y="176" fill="#7d8590">Which domain · which subgraph · how deep · what the caller may access · cost</text>
   <text class="m det" x="46" y="192" fill="#7d8590">MCP: JSON-RPC · streamable HTTP + SSE · sessions · transport security · metering</text>
   <text class="m det" x="46" y="208" fill="#7d8590">A2A agent cards · machine-readable economics · x402 · EIP-3009 · Base settlement</text>
@@ -44,12 +44,12 @@
   <rect x="30" y="238" width="580" height="48" rx="6" fill="#161b22" stroke="#21262d"/>
   <rect x="30" y="238" width="3.5" height="48" rx="1.5" fill="#3fb950"/>
   <text class="m lbl" x="46" y="258" fill="#e6edf3">KNOWLEDGE LAYER</text>
-  <text class="m met" x="596" y="258" fill="#e6edf3" text-anchor="end">F1 0.471 vs RAG 0.123</text>
-  <text class="m det" x="46" y="276" fill="#7d8590">307 domain graphs · typed authored edges · REQUIRES / ENABLES / IMPLEMENTS</text>
+  <text class="m met" x="596" y="258" fill="#e6edf3" text-anchor="end">typed, traversable knowledge</text>
+  <text class="m det" x="46" y="276" fill="#7d8590">Authored domain graphs · typed edges · REQUIRES / ENABLES / IMPLEMENTS</text>
 
   <line x1="320" y1="286" x2="320" y2="302" stroke="#30475e" stroke-width="1.5" marker-end="url(#a)"/>
 
   <!-- provenance -->
   <rect x="30" y="306" width="580" height="34" rx="6" fill="#0f1d17" stroke="#238636" stroke-opacity=".5"/>
-  <text class="m det" x="46" y="328" fill="#3fb950">every answer  →  source URL  +  SHA-256 of the bytes it was authored from</text>
+  <text class="m det" x="46" y="328" fill="#3fb950">source evidence  →  source URL  +  SHA-256 of captured bytes</text>
 </svg>

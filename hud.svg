@@ -1,15 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="587" height="214">
-  <rect width="587" height="214" fill="#0d1117" rx="6"/>
-  <text y="14" font-family="'Courier New', 'Lucida Console', monospace" font-size="13" fill="#3fb950" xml:space="preserve">
-
-  <tspan x="20" dy="0">Model for Language, Context for Knowledge ▸ ckg-benchmark v0.6.2</tspan>
-  <tspan x="20" dy="20">══════════════════════════════════════════════════════════════════════</tspan>
-  <tspan x="20" dy="20"> BENCHMARK F1     [██████████████░░░░]  0.471   +283% vs RAG</tspan>
-  <tspan x="20" dy="20"> TOKEN EFFICIENCY [████████████████░░]  91%     tokens saved vs RAG</tspan>
-  <tspan x="20" dy="20"> CKG DOMAINS      [█████████████████░]  97      SHA-256 · MCP-native</tspan>
-  <tspan x="20" dy="20"> TOKENS SAVED     [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓]  123.4M  this month vs RAG</tspan>
-  <tspan x="20" dy="20"> SAVINGS AT SCALE [░░░░░░░░░░░░░░░░░░]  $154    est · enterprise</tspan>
-  <tspan x="20" dy="20">══════════════════════════════════════════════════════════════════════</tspan>
-  <tspan x="20" dy="20"> Own the context, rent the model.</tspan>
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="254" viewBox="0 0 640 254" role="img" aria-labelledby="title desc">
+  <title id="title">CKG benchmark v0.6.2</title>
+  <desc id="desc">Macro-F1 0.471 versus RAG 0.123; 269 versus 2,982 tokens per query; 91 percent fewer tokens; five-hop F1 0.772 versus 0.170. Bars show F1 on a zero-to-one scale, token use relative to RAG, and the fraction of tokens saved. Locked benchmark results, not live usage.</desc>
+  <rect width="640" height="254" rx="8" fill="#0d1117"/>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13">
+    <text x="26" y="30" fill="#3fb950" font-weight="700">MODEL FOR LANGUAGE. CONTEXT FOR KNOWLEDGE.</text>
+    <text x="26" y="50" fill="#7d8590" font-size="11">ckg-benchmark v0.6.2 · locked results</text>
+    <line x1="26" y1="64" x2="614" y2="64" stroke="#238636"/>
+    <text x="26" y="91" fill="#7d8590">MACRO-F1</text>
+<rect x="190" y="81" width="5" height="11" fill="#3fb950"/>
+<rect x="198" y="81" width="5" height="11" fill="#3fb950"/>
+<rect x="206" y="81" width="5" height="11" fill="#3fb950"/>
+<rect x="214" y="81" width="5" height="11" fill="#3fb950"/>
+<rect x="222" y="81" width="5" height="11" fill="#3fb950"/>
+<rect x="230" y="81" width="5" height="11" fill="#3fb950"/>
+<rect x="238" y="81" width="5" height="11" fill="#21262d"/>
+<rect x="246" y="81" width="5" height="11" fill="#21262d"/>
+<rect x="254" y="81" width="5" height="11" fill="#21262d"/>
+<rect x="262" y="81" width="5" height="11" fill="#21262d"/>
+<rect x="270" y="81" width="5" height="11" fill="#21262d"/>
+<rect x="278" y="81" width="5" height="11" fill="#21262d"/>
+<text x="320" y="91" fill="#3fb950" font-weight="700">0.471</text>
+<text x="421" y="91" fill="#c9d1d9">RAG 0.123</text>
+<text x="26" y="120" fill="#7d8590">TOKENS / QUERY</text>
+<rect x="190" y="110" width="5" height="11" fill="#3fb950"/>
+<rect x="198" y="110" width="5" height="11" fill="#21262d"/>
+<rect x="206" y="110" width="5" height="11" fill="#21262d"/>
+<rect x="214" y="110" width="5" height="11" fill="#21262d"/>
+<rect x="222" y="110" width="5" height="11" fill="#21262d"/>
+<rect x="230" y="110" width="5" height="11" fill="#21262d"/>
+<rect x="238" y="110" width="5" height="11" fill="#21262d"/>
+<rect x="246" y="110" width="5" height="11" fill="#21262d"/>
+<rect x="254" y="110" width="5" height="11" fill="#21262d"/>
+<rect x="262" y="110" width="5" height="11" fill="#21262d"/>
+<rect x="270" y="110" width="5" height="11" fill="#21262d"/>
+<rect x="278" y="110" width="5" height="11" fill="#21262d"/>
+<text x="320" y="120" fill="#3fb950" font-weight="700">269</text>
+<text x="421" y="120" fill="#c9d1d9">RAG 2,982</text>
+<text x="26" y="149" fill="#7d8590">TOKEN REDUCTION</text>
+<rect x="190" y="139" width="5" height="11" fill="#3fb950"/>
+<rect x="198" y="139" width="5" height="11" fill="#3fb950"/>
+<rect x="206" y="139" width="5" height="11" fill="#3fb950"/>
+<rect x="214" y="139" width="5" height="11" fill="#3fb950"/>
+<rect x="222" y="139" width="5" height="11" fill="#3fb950"/>
+<rect x="230" y="139" width="5" height="11" fill="#3fb950"/>
+<rect x="238" y="139" width="5" height="11" fill="#3fb950"/>
+<rect x="246" y="139" width="5" height="11" fill="#3fb950"/>
+<rect x="254" y="139" width="5" height="11" fill="#3fb950"/>
+<rect x="262" y="139" width="5" height="11" fill="#3fb950"/>
+<rect x="270" y="139" width="5" height="11" fill="#3fb950"/>
+<rect x="278" y="139" width="5" height="11" fill="#21262d"/>
+<text x="320" y="149" fill="#3fb950" font-weight="700">91%</text>
+<text x="421" y="149" fill="#c9d1d9">relative to RAG</text>
+<text x="26" y="178" fill="#7d8590">F1 AT FIVE HOPS</text>
+<rect x="190" y="168" width="5" height="11" fill="#3fb950"/>
+<rect x="198" y="168" width="5" height="11" fill="#3fb950"/>
+<rect x="206" y="168" width="5" height="11" fill="#3fb950"/>
+<rect x="214" y="168" width="5" height="11" fill="#3fb950"/>
+<rect x="222" y="168" width="5" height="11" fill="#3fb950"/>
+<rect x="230" y="168" width="5" height="11" fill="#3fb950"/>
+<rect x="238" y="168" width="5" height="11" fill="#3fb950"/>
+<rect x="246" y="168" width="5" height="11" fill="#3fb950"/>
+<rect x="254" y="168" width="5" height="11" fill="#3fb950"/>
+<rect x="262" y="168" width="5" height="11" fill="#21262d"/>
+<rect x="270" y="168" width="5" height="11" fill="#21262d"/>
+<rect x="278" y="168" width="5" height="11" fill="#21262d"/>
+<text x="320" y="178" fill="#3fb950" font-weight="700">0.772</text>
+<text x="421" y="178" fill="#c9d1d9">RAG 0.170</text>
+    <line x1="26" y1="196" x2="614" y2="196" stroke="#238636"/>
+    <text x="26" y="219" fill="#3fb950">Own the context, rent the model.</text>
+    <text x="26" y="238" fill="#7d8590" font-size="10">Benchmark measurements · not live traffic or customer savings</text>
+  </g>
 </svg>

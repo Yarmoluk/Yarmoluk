@@ -1,67 +1,80 @@
 <div align="center">
 
-<img src="stack.svg" alt="The stack: any agent framework, over MCP, to a Compressed Knowledge Graph, with SHA-256 source provenance on every answer" width="640">
+<img src="stack.svg" alt="Context architecture: agents connect through MCP and context routing to typed knowledge graphs, with source URLs and SHA-256 hashes on captured evidence." width="640">
+
+**Agents → context routing over MCP → Compressed Knowledge Graphs → source evidence.**
 
 ### Hi, I'm Daniel 👋
 
-**AI Solutions Architect · Forward Deployed Engineer · Minneapolis, MN**
+**Forward Deployed Engineer · AI Solutions Architect · Minneapolis, MN**
 
 I work on **context architecture** — the layer between an agent and everything it is
 expected to know. **Context routing** decides which knowledge an agent gets and what it
-costs to get it. The **knowledge layer** underneath is typed and traversable, so every
-answer traces to a source instead of being reconstructed from similarity.
+costs to get it. The **knowledge layer** underneath is typed and traversable, giving
+agents declared relationships and source evidence they can cite.
 
 Fifteen years of enterprise architecture, most recently at Slalom delivering Fortune 500 AI.
 I like the deployed half of the job: the customer's environment, their constraints, the
 failure modes that never show up in a demo.
 
-<img src="hud.svg" alt="CKG benchmark: macro-F1 0.471, 91% token efficiency, 0.772 at five hops, 307 domain graphs, 6 live MCP services" width="640">
+**Measured on the public benchmark: 3.8× macro-F1 versus RAG.**
 
-[![Benchmark](https://img.shields.io/badge/macro--F1-0.471_vs_0.123_RAG-1f6feb?style=flat-square)](https://github.com/Yarmoluk/ckg-benchmark)
-[![Tokens](https://img.shields.io/badge/tokens-269_vs_2%2C982-8b5cf6?style=flat-square)](https://github.com/Yarmoluk/ckg-benchmark)
-[![Domains](https://img.shields.io/badge/domain_graphs-307-0f6e56?style=flat-square)](https://graphifymd.com)
-[![PyPI](https://img.shields.io/badge/PyPI-12_packages-3775A9?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
+[![Benchmark](https://img.shields.io/badge/benchmark-v0.6.2-1f6feb?style=flat-square)](https://github.com/Yarmoluk/ckg-benchmark/blob/main/paper/main.pdf)
+[![Domains](https://img.shields.io/badge/domain_graphs-explore-0f6e56?style=flat-square)](https://graphifymd.com)
+[![PyPI](https://img.shields.io/badge/PyPI-packages-3775A9?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/user/danyarm/)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-danyarm-f59e0b?style=flat-square)](https://huggingface.co/danyarm)
 [![Patent](https://img.shields.io/badge/patent-pending-7c3aed?style=flat-square)](https://graphifymd.com)
 
 **[Portfolio &amp; resume &rarr;](https://yarmoluk.github.io)**
 
-[graphifymd.com](https://graphifymd.com) · [LinkedIn](https://linkedin.com/in/danyarmoluk) · [PyPI](https://pypi.org/user/danyarm/) · [Hugging&nbsp;Face](https://huggingface.co/danyarm)
+[Contact about a role](mailto:daniel.yarmoluk@gmail.com?subject=Forward%20deployed%20engineering%20role) · [Discuss a project](mailto:daniel.yarmoluk@gmail.com?subject=Context%20architecture%20project) · [LinkedIn](https://linkedin.com/in/danyarmoluk)
 
 </div>
 
 ---
 
-## Try it in 30 seconds
+## What I build
 
-Every MCP server I run publishes an [A2A agent card](https://ckg-nvidia-ai.onrender.com/.well-known/agent-card.json) that states its own economics, so a calling agent can decide whether invoking is worth it **before** it spends anything:
+| Work | What it involves | Explore |
+|:--|:--|:--|
+| **Context architecture** | Route a question to the relevant domain, subgraph and traversal depth; return typed relationships with source evidence. | [Graphify.md](https://graphifymd.com) |
+| **Agent integrations** | Deliver local graph context through LangChain and LangGraph, or connect a hosted graph through MCP. | [CKGRetriever in LangChain's directory](https://docs.langchain.com/oss/python/integrations/retrievers#:~:text=CKGRetriever) |
+| **Deployed systems** | Work through transport behavior, tool schemas, access controls, metering and observability. | [ckg-nvidia-ai](https://github.com/Yarmoluk/ckg-nvidia-ai) |
+| **Evaluation** | Compare answer quality, context size and multi-hop performance against explicit baselines. | [ckg-benchmark](https://github.com/Yarmoluk/ckg-benchmark) |
 
-```bash
-curl -s https://ckg-nvidia-ai.onrender.com/.well-known/agent-card.json | jq .economics
-```
+My focus is the whole path: the customer's source material, the context an agent receives,
+and the behavior we can inspect after deployment.
 
-```jsonc
-{
-  "price_usd_per_call": 0.010,
-  "mean_tokens_returned": 269,
-  "baseline_mean_tokens": 2982,      // RAG over the same corpus
-  "tokens_saved_per_call": 2713,
-  "breakeven_input_price_usd_per_mtok": 3.69,
-  "answer_quality_macro_f1": 0.471,
-  "baseline_macro_f1": 0.123,
-  "decision_rule": "…pays for itself on token cost alone when your input price
-                    exceeds $3.69 per million tokens. Below that, invoke only
-                    when answer quality matters."
-}
-```
+---
 
-That last field is the point: **it tells you when not to call it.** A card that claims savings at every price is one a good agent should distrust.
+## LangChain and LangGraph
+
+I built [`langchain-ckg`](https://pypi.org/project/langchain-ckg/), an independently maintained retriever that turns graph lookups into LangChain `Document` results. `CKGRetriever` appears in [LangChain's retriever directory](https://docs.langchain.com/oss/python/integrations/retrievers#:~:text=CKGRetriever). The reviewed release bundles 11 domain graphs and can run locally without an embedding API. It can also be wrapped as a LangChain tool or used inside a LangGraph workflow.
+
+That work connects to the part of deployed engineering I care about: getting useful context into an agent, making the result inspectable, and testing how it behaves in a real workflow. The [package](https://pypi.org/project/langchain-ckg/) and [benchmark paper](https://github.com/Yarmoluk/ckg-benchmark/blob/main/paper/main.pdf) are separate projects; the benchmark measures CKG retrieval, not a performance guarantee for this integration.
+
+---
+
+## Work with me
+
+I help teams with two practical jobs:
+
+1. **Context architecture review.** Map one agent workflow, trace where its knowledge comes from, and identify the retrieval, access and evaluation gaps that matter in deployment.
+2. **CKG pilot.** Turn a bounded set of trusted documents into a source-traceable graph, connect it to the team's agent stack, and compare it with the existing retrieval path on agreed questions.
+
+**[Discuss a project →](mailto:daniel.yarmoluk@gmail.com?subject=Context%20architecture%20project)**
+
+For a hands-on starting point, install the [public `langchain-ckg` package](https://pypi.org/project/langchain-ckg/). Hosted integration and billing are separate from that local package.
 
 ---
 
 ## The Compressed Knowledge Graph
 
-RAG chunks prose and retrieves by embedding similarity, which discards the relationships. A CKG stores relationships as **typed, authored edges** and traverses them. Every answer traces to a source URL and a SHA-256 of the bytes it was authored from.
+A CKG stores relationships as **typed, authored edges** and traverses them. Source URLs and SHA-256 hashes identify the captured evidence behind graph declarations. A hash verifies which bytes were captured; it does not, by itself, prove that an answer is correct.
+
+<p align="center">
+  <img src="hud.svg" alt="Locked CKG benchmark v0.6.2: macro-F1 0.471 versus RAG 0.123; 269 versus 2,982 tokens per query; five-hop F1 0.772 versus 0.170." width="640">
+</p>
 
 **Benchmarked against RAG and Microsoft GraphRAG** — 44 domains, 7,758 queries, locked at v0.6.2:
 
@@ -73,7 +86,7 @@ RAG chunks prose and retrieves by embedding similarity, which discards the relat
 
 The last row matters most. The advantage **grows with question complexity**, because multi-hop composition is exactly where embedding methods are weakest.
 
-**[→ Clone the benchmark and re-run it](https://github.com/Yarmoluk/ckg-benchmark)** · [Dataset on Hugging Face](https://huggingface.co/datasets/danyarm/ckg-benchmark) (CC-BY-4.0)
+**[Read the benchmark paper](https://github.com/Yarmoluk/ckg-benchmark/blob/main/paper/main.pdf)** · [Clone and re-run it](https://github.com/Yarmoluk/ckg-benchmark) · [Dataset on Hugging Face](https://huggingface.co/datasets/danyarm/ckg-benchmark) (CC-BY-4.0)
 
 > The repo includes a reconciliation document correcting my own published cost figures — an earlier version priced CKG and the baselines against different models, which inflated the ratio. Numbers I can't defend are worse than no numbers.
 
@@ -99,7 +112,7 @@ Agent cards advertising skills, auth, payment terms and machine-readable economi
 </td></tr>
 </table>
 
-**Framework-agnostic by protocol.** The same servers register unchanged in Semantic Kernel, LangChain, LangGraph, AutoGen, CrewAI, Claude and Cursor — integration happens at the protocol layer, so framework choice stays the caller's decision.
+**Framework choice stays with the caller.** MCP provides a shared tool interface; framework-specific integrations such as `langchain-ckg` can expose graph context through their native retriever APIs.
 
 ```python
 # Microsoft Semantic Kernel consumes an MCP server directly — no bridging code
@@ -118,7 +131,7 @@ async with MCPStreamableHttpPlugin(
 ## Published packages
 
 <details open>
-<summary><b>12 packages on PyPI · 100+ releases · 6 running as live MCP services</b></summary>
+<summary><b>Published packages and MCP integrations</b></summary>
 <br>
 
 | package | serves |
@@ -152,6 +165,6 @@ Adjunct professor, **University of St. Thomas** — Graduate AI Systems. Feature
 
 **Open to AI Solutions Architect, Forward Deployed Engineer and Agentic AI Architect roles.**
 
-[**Resume**](https://yarmoluk.github.io#resume) · [daniel.yarmoluk@gmail.com](mailto:daniel.yarmoluk@gmail.com)
+[**Resume**](https://yarmoluk.github.io#resume) · [**Discuss a project**](mailto:daniel.yarmoluk@gmail.com?subject=Context%20architecture%20project)
 
 </div>

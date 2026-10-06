@@ -42,8 +42,8 @@ The one benchmark I quote, from one locked run (v0.6.2), 44 hand-curated domains
 | tokens per query | 269 | 2,982 | - |
 
 That is nearly 4x RAG on structural queries. The 11x token reduction comes from the same run, not an
-independent result. At 5 hops, CKG F1 is 0.772 against 0.170 for RAG. The benchmark materials are not
-currently public; results are reproducible on request.
+independent result. At 5 hops, CKG F1 is 0.772 against 0.170 for RAG. Dataset:
+[huggingface.co/datasets/danyarm/ckg-benchmark](https://huggingface.co/datasets/danyarm/ckg-benchmark).
 
 ---
 
